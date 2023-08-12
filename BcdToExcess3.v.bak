@@ -1,0 +1,33 @@
+
+module BcdToExcess3(b,e);
+input [3:0]b;
+output [3:0] e;
+not(e[0],b[0]);
+xor(e[1],b[0],b[1]);
+or (w,b[0],b[1]);
+xor(e[2],w,b[2]);
+and (x,b[2],w);
+or(e[3],x,b[3]);
+endmodule
+module BcdToExcess3_TB();
+reg [3:0] a;
+wire [3:0]b;
+BcdToExcess3 BC(a,b);
+initial begin
+#0 a=4'd1;
+#50 a=4'd2;
+#50 a=4'd3;
+#50 a=4'd4;
+#50 a=4'd5;
+#50 a=4'd6;
+#50 a=4'd7;
+#50 a=4'd8;
+#50 a=4'd9;
+#50 a=4'd10;
+#50 a=4'd11;
+#50 a=4'd12;
+#50 a=4'd13;
+#50 a=4'd14;
+#50 a=4'd15;
+end
+endmodule

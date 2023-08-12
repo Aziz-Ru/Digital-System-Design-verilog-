@@ -1,0 +1,43 @@
+
+module adderFourBit(a,b,cin,s,cout);
+input [3:0]a,b;
+input cin;
+output [3:0] s;
+output cout;
+wire [3:0] c;
+full_adder fa0(a[0],b[0],cin,s[0],c[0]);
+full_adder fa1(a[1],b[1],c[0],s[1],c[1]);
+full_adder fa2(a[2],b[2],c[1],s[2],c[2]);
+full_adder fa3(a[3],b[3],c[2],s[3],cout);
+endmodule
+
+module Bcd_Adder(a,b,cin1,cin2,s,cout);
+input [3:0] a,b;
+input cin1,cin2;
+output [3:0] s;
+output cout;
+wire [3:0] w,x;
+wire c1;
+adderFourBit af1(a,b,cin1,w,c1);
+and (c2,w[1],w[3]);
+and (c3,w[2],w[3]);
+or (cout,c2,c3,c1);
+
+adderFourBit af2(w,{1'b0,cout,cout,1'b0},cin2,s,t);
+
+endmodule
+ module Bcd_Adder_TB();
+reg [3:0] a,b;
+reg cin1,cin2;
+wire [3:0] s;
+wire c;
+Bcd_Adder BC(a,b,cin1,cin2,s,c);
+initial begin
+#0 a=4'd4 ;b=4'd10;cin1=1'b0;cin2=1'b0;
+#100 a=4'd7 ;b=4'd10;
+#100 a=4'd10 ;b=4'd1;
+#100 a=4'd12 ;b=4'd12;
+#100 a=4'd9 ;b=4'd1;
+#100 a=4'd9 ;b=4'd10;
+end
+endmodule

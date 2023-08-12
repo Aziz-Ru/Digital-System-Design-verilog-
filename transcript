@@ -1,0 +1,193 @@
+# Loading project LAB
+# Compile of BCD_ADDER.v failed with 1 errors.
+# Compile of BCD_ADDER.v was successful.
+vsim work.Bcd_Adder_TB
+# vsim work.Bcd_Adder_TB 
+# Start time: 12:37:59 on Aug 12,2023
+# Loading work.Bcd_Adder_TB
+# Loading work.Bcd_Adder
+# Loading work.adderFourBit
+# Loading work.full_adder
+add wave -position insertpoint  \
+sim:/Bcd_Adder_TB/a \
+sim:/Bcd_Adder_TB/b
+add wave -position insertpoint  \
+sim:/Bcd_Adder_TB/s \
+sim:/Bcd_Adder_TB/c
+run
+run
+run
+run
+run
+run
+run
+# Break key hit
+quit -sim
+# End time: 12:40:18 on Aug 12,2023, Elapsed time: 0:02:19
+# Errors: 0, Warnings: 3
+# Compile of BCD_ADDER.v was successful.
+vsim work.Bcd_Adder_TB
+# vsim work.Bcd_Adder_TB 
+# Start time: 12:42:14 on Aug 12,2023
+# Loading work.Bcd_Adder_TB
+# Loading work.Bcd_Adder
+# Loading work.adderFourBit
+# Loading work.full_adder
+add wave -position insertpoint  \
+sim:/Bcd_Adder_TB/a \
+sim:/Bcd_Adder_TB/b
+add wave -position insertpoint  \
+sim:/Bcd_Adder_TB/s \
+sim:/Bcd_Adder_TB/c
+run
+run
+run
+run
+run
+run
+run
+quit -sim
+# End time: 12:43:32 on Aug 12,2023, Elapsed time: 0:01:18
+# Errors: 0, Warnings: 2
+# Compile of BinToGray.v failed with 14 errors.
+# Compile of BinToGray.v was successful.
+# Compile of BinToGray.v was successful.
+vsim work.BinToGray_TB
+# vsim work.BinToGray_TB 
+# Start time: 13:01:36 on Aug 12,2023
+# Loading work.BinToGray_TB
+# ** Error: (vsim-3037) Missing instance name in instantiation of 'BinToGray'.
+#    Time: 0 ps  Iteration: 0  Instance: /BinToGray_TB File: /home/silicon/HDL/BinToGray.v Line: 13
+# Error loading design
+# End time: 13:01:36 on Aug 12,2023, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 5
+# Compile of BinToGray.v was successful.
+vsim work.BinToGray_TB
+# vsim work.BinToGray_TB 
+# Start time: 13:01:57 on Aug 12,2023
+# Loading work.BinToGray_TB
+# Loading work.BinToGray
+add wave -position insertpoint  \
+sim:/BinToGray_TB/a \
+sim:/BinToGray_TB/b
+run
+run
+run
+run
+run
+run
+run
+run
+run
+quit -sim
+# End time: 13:02:58 on Aug 12,2023, Elapsed time: 0:01:01
+# Errors: 0, Warnings: 2
+# Compile of GrayToBin.v was successful.
+# Compile of GrayToBin.v was successful.
+vsim work.GrayToBin_TB
+# vsim work.GrayToBin_TB 
+# Start time: 13:19:23 on Aug 12,2023
+# Loading work.GrayToBin_TB
+# Loading work.GrayToBin
+add wave -position insertpoint  \
+sim:/GrayToBin_TB/a \
+sim:/GrayToBin_TB/b
+run
+run
+run
+run
+quit -sim
+# End time: 13:21:07 on Aug 12,2023, Elapsed time: 0:01:44
+# Errors: 0, Warnings: 4
+# Compile of GrayToBin.v was successful.
+# Compile of BcdToExcess3.v was successful.
+# Compile of BcdToExcess3.v was successful.
+vsim work.BcdToExcess3_TB
+# vsim work.BcdToExcess3_TB 
+# Start time: 13:59:21 on Aug 12,2023
+# Loading work.BcdToExcess3_TB
+# Loading work.BcdToExcess3
+add wave -position insertpoint  \
+sim:/BcdToExcess3_TB/a \
+sim:/BcdToExcess3_TB/b
+run
+run
+quit -sim
+# End time: 14:01:18 on Aug 12,2023, Elapsed time: 0:01:57
+# Errors: 0, Warnings: 5
+# Compile of BinToGray.v was successful.
+# Compile of BinToGray.v was successful.
+# Compile of BinToGray.v was successful.
+vsim work.BcdToExcess3_TB
+# vsim work.BcdToExcess3_TB 
+# Start time: 14:03:23 on Aug 12,2023
+# Loading work.BcdToExcess3_TB
+# Loading work.BcdToExcess3
+add wave -position insertpoint  \
+sim:/BcdToExcess3_TB/a \
+sim:/BcdToExcess3_TB/b
+run
+quit -sim
+# End time: 14:03:47 on Aug 12,2023, Elapsed time: 0:00:24
+# Errors: 0, Warnings: 4
+# Compile of BinToGray.v was successful.
+# Compile of BinToGray.v was successful.
+# Compile of BcdToExcess3.v was successful.
+# Compile of BcdToExcess3.v was successful.
+vsim work.BcdToExcess3_TB
+# vsim work.BcdToExcess3_TB 
+# Start time: 14:04:14 on Aug 12,2023
+# Loading work.BcdToExcess3_TB
+# Loading work.BcdToExcess3
+add wave -position insertpoint  \
+sim:/BcdToExcess3_TB/a \
+sim:/BcdToExcess3_TB/b
+run
+run
+run
+run
+run
+run
+run
+quit -sim
+# End time: 14:05:20 on Aug 12,2023, Elapsed time: 0:01:06
+# Errors: 0, Warnings: 5
+# Compile of Excess3ToBcd.v was successful.
+# Compile of Excess3ToBcd.v failed with 1 errors.
+# Compile of Excess3ToBcd.v failed with 1 errors.
+# Compile of Excess3ToBcd.v was successful.
+vsim work.Excess3ToBcd_TB
+# vsim work.Excess3ToBcd_TB 
+# Start time: 15:15:37 on Aug 12,2023
+# Loading work.Excess3ToBcd_TB
+# Loading work.Excess3ToBcd
+add wave -position insertpoint  \
+sim:/Excess3ToBcd_TB/a \
+sim:/Excess3ToBcd_TB/b
+run
+run
+run
+quit -sim
+# End time: 15:24:25 on Aug 12,2023, Elapsed time: 0:08:48
+# Errors: 0, Warnings: 6
+# Compile of Excess3ToBcd.v was successful.
+vsim work.Excess3ToBcd_TB
+# vsim work.Excess3ToBcd_TB 
+# Start time: 15:24:56 on Aug 12,2023
+# Loading work.Excess3ToBcd_TB
+# Loading work.Excess3ToBcd
+add wave -position insertpoint  \
+sim:/Excess3ToBcd_TB/a \
+sim:/Excess3ToBcd_TB/b
+run
+run
+run
+run
+run
+run
+run
+run
+run
+quit -sim
+# End time: 15:25:41 on Aug 12,2023, Elapsed time: 0:00:45
+# Errors: 0, Warnings: 2
