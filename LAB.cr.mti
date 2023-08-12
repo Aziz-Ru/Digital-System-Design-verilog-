@@ -1,10 +1,10 @@
-/home/silicon/HDL/BcdToExcess3.v {1 {vlog -work work -stats=none /home/silicon/HDL/BcdToExcess3.v
+/home/silicon/HDL/Excess3ToBcd.v {1 {vlog -work work -stats=none /home/silicon/HDL/Excess3ToBcd.v
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
--- Compiling module BcdToExcess3
--- Compiling module BcdToExcess3_TB
+-- Compiling module Excess3ToBcd
+-- Compiling module Excess3ToBcd_TB
 
 Top level modules:
-	BcdToExcess3_TB
+	Excess3ToBcd_TB
 
 } {} {}} /home/silicon/HDL/FULL_ADDER.v {1 {vlog -work work -stats=none /home/silicon/HDL/FULL_ADDER.v
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
@@ -15,13 +15,20 @@ Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 
 Top level modules:
 	FourBit_TB
 
-} {} {}} /home/silicon/HDL/BinToGray.v {1 {vlog -work work -stats=none /home/silicon/HDL/BinToGray.v
+} {} {}} /home/silicon/HDL/BcdToExcess3.v {1 {vlog -work work -stats=none /home/silicon/HDL/BcdToExcess3.v
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
--- Compiling module BinToGray
--- Compiling module BinToGray_TB
+-- Compiling module BcdToExcess3
+-- Compiling module BcdToExcess3_TB
 
 Top level modules:
-	BinToGray_TB
+	BcdToExcess3_TB
+
+} {} {}} /home/silicon/HDL/JK_Flip_Flop.v {1 {vlog -work work -stats=none /home/silicon/HDL/JK_Flip_Flop.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module jk_flip_flop
+
+Top level modules:
+	jk_flip_flop
 
 } {} {}} /home/silicon/HDL/GrayToBin.v {1 {vlog -work work -stats=none /home/silicon/HDL/GrayToBin.v
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
@@ -31,6 +38,14 @@ Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 
 Top level modules:
 	GrayToBin_TB
 
+} {} {}} /home/silicon/HDL/BinToGray.v {1 {vlog -work work -stats=none /home/silicon/HDL/BinToGray.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module BinToGray
+-- Compiling module BinToGray_TB
+
+Top level modules:
+	BinToGray_TB
+
 } {} {}} /home/silicon/HDL/BCD_ADDER.v {1 {vlog -work work -stats=none /home/silicon/HDL/BCD_ADDER.v
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
 -- Compiling module adderFourBit
@@ -39,5 +54,12 @@ Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 
 
 Top level modules:
 	Bcd_Adder_TB
+
+} {} {}} /home/silicon/HDL/Mod10Counter.v {1 {vlog -work work -stats=none /home/silicon/HDL/Mod10Counter.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module mod_10_counter
+
+Top level modules:
+	mod_10_counter
 
 } {} {}}

@@ -9,6 +9,20 @@ or(w2,e[2],w1);
 and(b[3],e[3],w2);
 endmodule
 
+/*
+in k map w get this equation
+@=xor
+'=not
+.=and
++=or
+b0=e0'
+b1=e0@e1
+b2=e2'.e1'+e2'.e0'+e2.e1.e0
+=e2'(e1'+e0')+e2.e1'.e0'
+=(e2@(e1.e0))'
+b3=e3.e2+e3.e1.e0;
+=e3.(e2+e1.e0)
+*/
 module Excess3ToBcd_TB();
 reg [3:0] a;
 wire [3:0]b;

@@ -1,14 +1,30 @@
-
+/*
+in k map w get this equation
+@=xor
+'=not
+.=and
++=or
+e0=b0'
+e1=b0.b1+b0'.b1'=(b0@b1)'
+e2=b2'.b1+b2'.b0+b2.b1'.b0'
+=b2'(b1+b0)+b2.b1'.b0'
+=b2@(b1+b0)
+e3=b3+b2.b1+b2.b0
+=b3+b2(b1+b0)
+*/
 module BcdToExcess3(b,e);
 input [3:0]b;
 output [3:0] e;
+
 not(e[0],b[0]);
-xor(e[1],b[0],b[1]);
+xnor(e[1],b[0],b[1]);
 or (w,b[0],b[1]);
 xor(e[2],w,b[2]);
 and (x,b[2],w);
 or(e[3],x,b[3]);
+
 endmodule
+
 module BcdToExcess3_TB();
 reg [3:0] a;
 wire [3:0]b;

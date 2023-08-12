@@ -3,13 +3,26 @@ input [3:0]e;
 output [3:0]b;
 not (b[0],e[0]);
 xor(b[1],e[0],e[1]);
-or(w1,e[0],e[1]);
+and(w1,e[0],e[1]);
 xnor(b[2],w1,e[2]);
-and (w4,e[3],e[2]);
-and (w5,e[3],e[1],e[0]);
-or(b[3],w4,w5);
+or(w2,e[2],w1);
+and(b[3],e[3],w2);
 endmodule
 
+/*
+in k map w get this equation
+@=xor
+'=not
+.=and
++=or
+b0=e0'
+b1=
+e2=b2'.b1+b2'.b0+b2.b1'.b0'
+=b2'(b1+b0)+b2.b1'.b0'
+=b2@(b1+b0)
+e3=b3+b2.b1+b2.b0
+=b3+b2(b1+b0)
+*/
 module Excess3ToBcd_TB();
 reg [3:0] a;
 wire [3:0]b;
