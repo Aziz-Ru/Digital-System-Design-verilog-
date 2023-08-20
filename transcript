@@ -1,89 +1,20 @@
 # Loading project LAB
-# Compile of Excess3ToBcd.v was successful.
 # Compile of JK_Flip_Flop.v was successful.
-vsim work.jk_flip_flop
-# vsim work.jk_flip_flop 
-# Start time: 19:18:48 on Aug 12,2023
+# Load canceled
+# Compile of PYQSSequence_Counter.v was successful.
+vsim work.PYQuesion
+# vsim work.PYQuesion 
+# Start time: 20:02:54 on Aug 20,2023
+# Loading work.PYQuesion
 # Loading work.jk_flip_flop
 add wave -position insertpoint  \
-sim:/jk_flip_flop/j \
-sim:/jk_flip_flop/k \
-sim:/jk_flip_flop/clk \
-sim:/jk_flip_flop/clr \
-sim:/jk_flip_flop/q \
-sim:/jk_flip_flop/qbar
-force -freeze sim:/jk_flip_flop/j 1 0
-force -freeze sim:/jk_flip_flop/k 1 0
-force -freeze sim:/jk_flip_flop/clk 1 0, 0 {50 ps} -r 100
-force -freeze sim:/jk_flip_flop/clr 0 0
+sim:/PYQuesion/clk \
+sim:/PYQuesion/clr \
+sim:/PYQuesion/q
+force -freeze sim:/PYQuesion/clk 1 0, 0 {50 ps} -r 100
+force -freeze sim:/PYQuesion/clr 0 0
 run
-force -freeze sim:/jk_flip_flop/clr 1 0
-run
-run
-run
-restart -f
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-force -freeze sim:/jk_flip_flop/j 1 0
-force -freeze sim:/jk_flip_flop/k 1 0
-force -freeze sim:/jk_flip_flop/clk 1 0, 0 {50 ps} -r 100
-force -freeze sim:/jk_flip_flop/clr 0 0
-run
-run
-force -freeze sim:/jk_flip_flop/clr St1 0
-run
-run
-quit -sim
-# End time: 19:23:28 on Aug 12,2023, Elapsed time: 0:04:40
-# Errors: 0, Warnings: 1
-# Compile of JK_Flip_Flop.v was successful.
-vsim work.jk_flip_flop
-# vsim work.jk_flip_flop 
-# Start time: 19:23:52 on Aug 12,2023
-# Loading work.jk_flip_flop
-add wave -position insertpoint  \
-sim:/jk_flip_flop/j \
-sim:/jk_flip_flop/k \
-sim:/jk_flip_flop/clk \
-sim:/jk_flip_flop/clr \
-sim:/jk_flip_flop/q \
-sim:/jk_flip_flop/qbar
-force -freeze sim:/jk_flip_flop/j 1 0
-force -freeze sim:/jk_flip_flop/k 1 0
-force -freeze sim:/jk_flip_flop/clk 1 0, 0 {50 ps} -r 100
-force -freeze sim:/jk_flip_flop/clr 0 0
-run
-force -freeze sim:/jk_flip_flop/clr 1 0
-run
-run
-run
-run
-run
-run
-run
-# Compile of JK_Flip_Flop.v was successful.
-quit -sim
-# End time: 19:27:13 on Aug 12,2023, Elapsed time: 0:03:21
-# Errors: 0, Warnings: 3
-# Compile of Mod10Counter.v failed with 2 errors.
-# Compile of Mod10Counter.v failed with 1 errors.
-# Compile of Mod10Counter.v was successful.
-vsim work.mod_10_counter
-# vsim work.mod_10_counter 
-# Start time: 19:44:30 on Aug 12,2023
-# Loading work.mod_10_counter
-# Loading work.jk_flip_flop
-add wave -position insertpoint  \
-sim:/mod_10_counter/clk
-add wave -position insertpoint  \
-sim:/mod_10_counter/q
-force -freeze sim:/mod_10_counter/clk 1 0, 0 {50 ps} -r 100
-add wave -position insertpoint  \
-sim:/mod_10_counter/clr
-force -freeze sim:/mod_10_counter/clr 0 0
-run
-noforce sim:/mod_10_counter/clr
-run
-run
+force -freeze sim:/PYQuesion/clr 1 0
 run
 run
 run
@@ -94,44 +25,5 @@ run
 run
 run
 quit -sim
-# End time: 19:50:28 on Aug 12,2023, Elapsed time: 0:05:58
-# Errors: 0, Warnings: 5
-# Compile of Mod10Counter.v was successful.
-# Compile of Updown_Counter.v failed with 1 errors.
-# Compile of Updown_Counter.v failed with 1 errors.
-# Compile of Updown_Counter.v failed with 1 errors.
-# Compile of Updown_Counter.v failed with 1 errors.
-# Compile of Updown_Counter.v was successful.
-vsim work.Up_Down_Counter
-# vsim work.Up_Down_Counter 
-# Start time: 20:39:53 on Aug 12,2023
-# Loading work.Up_Down_Counter
-# Loading work.jk_flip_flop
-add wave -position insertpoint  \
-sim:/Up_Down_Counter/clk \
-sim:/Up_Down_Counter/clr \
-sim:/Up_Down_Counter/m \
-sim:/Up_Down_Counter/q
-force -freeze sim:/Up_Down_Counter/clk 1 0, 0 {50 ps} -r 100
-force -freeze sim:/Up_Down_Counter/clr 0 0
-force -freeze sim:/Up_Down_Counter/m 0 0
-run
-force -freeze sim:/Up_Down_Counter/clr 1 0
-run
-run
-run
-run
-run
-run
-run
-run
-force -freeze sim:/Up_Down_Counter/m 1 0
-run
-run
-run
-run
-run
-run
-run
-# End time: 20:43:13 on Aug 12,2023, Elapsed time: 0:03:20
-# Errors: 0, Warnings: 8
+# End time: 20:03:47 on Aug 20,2023, Elapsed time: 0:00:53
+# Errors: 0, Warnings: 4

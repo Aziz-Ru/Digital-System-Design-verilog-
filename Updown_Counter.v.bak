@@ -1,6 +1,7 @@
 /*
 During simulation You need to clk to clk 
 firstly clr force 0 then run 1 time then force it 1 
+if m=0 then it up or m=1 the down
 */
 module Up_Down_Counter(m,clk,clr,q);
 input clk,clr,m;

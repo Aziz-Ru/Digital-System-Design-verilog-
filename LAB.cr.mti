@@ -46,6 +46,15 @@ Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 
 Top level modules:
 	BinToGray_TB
 
+} {} {}} /home/silicon/HDL/Full_Adder_By_HA.v {1 {vlog -work work -stats=none /home/silicon/HDL/Full_Adder_By_HA.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module halfAdder
+-- Compiling module fullAdder
+-- Compiling module fullAdderTest
+
+Top level modules:
+	fullAdderTest
+
 } {} {}} /home/silicon/HDL/BCD_ADDER.v {1 {vlog -work work -stats=none /home/silicon/HDL/BCD_ADDER.v
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
 -- Compiling module adderFourBit
@@ -54,6 +63,15 @@ Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 
 
 Top level modules:
 	Bcd_Adder_TB
+
+} {} {}} /home/silicon/HDL/Random_sequence.v {1 {vlog -work work -stats=none /home/silicon/HDL/Random_sequence.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module Random_sequence
+-- Compiling module Random_sequence1
+
+Top level modules:
+	Random_sequence
+	Random_sequence1
 
 } {} {}} /home/silicon/HDL/Mod10Counter.v {1 {vlog -work work -stats=none /home/silicon/HDL/Mod10Counter.v
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020

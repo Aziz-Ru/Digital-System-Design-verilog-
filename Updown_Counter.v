@@ -11,6 +11,7 @@ reg j=1'b1,k=1'b1;
 wire mb,a,b,c,d,e,f;
 not(mb,m);
 wire clr;
+
 jk_flip_flop jk1(j,k,clk,clr,q[0],qb[0]);
 and (a,mb,q[0]);
 and (b,m,qb[0]);
