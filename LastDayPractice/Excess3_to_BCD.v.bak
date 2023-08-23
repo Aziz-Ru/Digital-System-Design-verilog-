@@ -1,0 +1,43 @@
+module xs3_to_BCD(x,b);
+input [3:0]x;
+output [3:0]b;
+wire [7:0] w;
+not(b[0],x[0]);
+xor(b[1],x[0],x[1]);
+
+not(w[0],x[0]);
+not(w[1],x[1]);
+not(w[2],x[2]);
+or(w[3],w[0],w[1]);
+and(w[4],w[2],w[3]);
+and(w[5],x[0],x[1],x[2]);
+
+or(b[2],w[4],w[5]);
+and(w[6],x[0],x[1]);
+or(w[7],x[2],w[6]);
+and(b[3],x[3],w[7]);
+endmodule
+module TB_XB();
+reg [3:0]x;
+wire [3:0]b;
+xs3_to_BCD XB1(x,b);
+initial begin
+#0 x=4'd0;
+#100 x=4'd1;
+#100 x=4'd2;
+#100 x=4'd3;
+#100 x=4'd4;
+#100 x=4'd5;
+#100 x=4'd6;
+#100 x=4'd7;
+#100 x=4'd8;
+#100 x=4'd9;
+#100 x=4'd10;
+#100 x=4'd11;
+#100 x=4'd12;
+#100 x=4'd13;
+#100 x=4'd14;
+#100 x=4'd15;
+end
+endmodule
+
