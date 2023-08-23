@@ -41,7 +41,7 @@ Verilog is a hardware description language (HDL) used for designing and modeling
 |BCD To Excess3 & Excess3 To BCD|[Theory From GeeksForGeeks](https://www.geeksforgeeks.org/code-converters-bcd8421-to-from-excess-3)|[BcdToExcess3.v](https://github.com/Aziz-Ru/Digital-System-Design-verilog-/blob/main/LABCode/BcdToExcess3.v) & [Excess3ToBcd.v](https://github.com/Aziz-Ru/Digital-System-Design-verilog-/blob/main/LABCode/Excess3ToBcd.v)|
 |4-bit binary Adder-Subtractor |[Theory From GeeksForGeeks](https://www.geeksforgeeks.org/4-bit-binary-adder-subtractor/)|[BinaryAdder](https://github.com/Aziz-Ru/Digital-System-Design-verilog-/blob/main/LABCode/FULL_ADDER.v)|
 |BCD Adder in Digital Logic|[Theory From GeeksForGeeks](https://www.geeksforgeeks.org/bcd-adder-in-digital-logic/)|[BCD_ADDER.v](https://github.com/Aziz-Ru/Digital-System-Design-verilog-/blob/main/LABCode/BCD_ADDER.v)|
-|4 bit asynchronous mod 10 counter|[Youtube](https://www.youtube.com/watch?v=4NEjjeIyA-4) |[Mod10Counter.v](https://github.com/Aziz-Ru/Digital-System-Design-verilog-/blob/main/LABCode/Mod10Counter.v)|
+|4 bit asynchronous mod 10 counter|[Youtube](https://www.youtube.com/watch?v=iEj1peAuxvg) |[Mod10Counter.v](https://github.com/Aziz-Ru/Digital-System-Design-verilog-/blob/main/LABCode/Mod10Counter.v)|
 |3 bit synchronous up-down counter|[Elctronics Tutorial](https://www.electronics-tutorials.ws/counter/count_4.html)|[Updown_Counter.v](https://github.com/Aziz-Ru/Digital-System-Design-verilog-/blob/main/LABCode/Updown_Counter.v)|
 |Random_sequence counter |[Youtube](https://www.youtube.com/watch?v=-tl59_wGPTg&t=744s) |[Random_sequence.v](https://github.com/Aziz-Ru/Digital-System-Design-verilog-/blob/main/LABCode/Random_sequence.v)|
 
