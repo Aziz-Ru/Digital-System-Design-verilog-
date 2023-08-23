@@ -1,0 +1,559 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+d/home/silicon/intelFPGA/20.1/modelsim_ase/bin
+vadder_subtractor
+Z0 !s110 1691989161
+!i10b 1
+!s100 ;jX^f>TlF6heF@P>4:2>a3
+Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I6@9hDfm<W=<g?>_MLP9Qi1
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+Z3 d/home/silicon/HDL
+Z4 w1691775195
+Z5 8/home/silicon/HDL/FULL_ADDER.v
+Z6 F/home/silicon/HDL/FULL_ADDER.v
+!i122 47
+L0 11 15
+Z7 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z8 !s108 1691989161.000000
+Z9 !s107 /home/silicon/HDL/FULL_ADDER.v|
+Z10 !s90 -reportprogress|300|-work|work|-stats=none|/home/silicon/HDL/FULL_ADDER.v|
+!i113 1
+Z11 o-work work
+Z12 tCvgOpt 0
+vadderFourBit
+R0
+!i10b 1
+!s100 0<X3kXM`1YNLKGm9?Z_@f2
+R1
+IUeeIW@]@>RZ>kVGkEBACM2
+R2
+R3
+Z13 w1691822514
+Z14 8/home/silicon/HDL/BCD_ADDER.v
+Z15 F/home/silicon/HDL/BCD_ADDER.v
+!i122 48
+L0 2 11
+R7
+r1
+!s85 0
+31
+R8
+Z16 !s107 /home/silicon/HDL/BCD_ADDER.v|
+Z17 !s90 -reportprogress|300|-work|work|-stats=none|/home/silicon/HDL/BCD_ADDER.v|
+!i113 1
+R11
+R12
+nadder@four@bit
+vBcd_Adder
+R0
+!i10b 1
+!s100 b@3SV8U1V398R71kgl:QQ2
+R1
+IOz_;DcFLdmbVbIn29UFa72
+R2
+R3
+R13
+R14
+R15
+!i122 48
+L0 14 15
+R7
+r1
+!s85 0
+31
+R8
+R16
+R17
+!i113 1
+R11
+R12
+n@bcd_@adder
+vBcd_Adder_TB
+R0
+!i10b 1
+!s100 9Z`_4>hG`U7NM<=HcBLNO3
+R1
+I5fe@SiET26k_<n7ezGhdQ0
+R2
+R3
+R13
+R14
+R15
+!i122 48
+L0 29 15
+R7
+r1
+!s85 0
+31
+R8
+R16
+R17
+!i113 1
+R11
+R12
+n@bcd_@adder_@t@b
+vBcdToExcess3
+R0
+!i10b 1
+!s100 VbbU5L=9WoTAUKA50:Yl;0
+R1
+IilJz9zY^bG`dNm9YOJDFL3
+R2
+R3
+Z18 w1691834586
+Z19 8/home/silicon/HDL/BcdToExcess3.v
+Z20 F/home/silicon/HDL/BcdToExcess3.v
+!i122 51
+L0 2 12
+R7
+r1
+!s85 0
+31
+R8
+Z21 !s107 /home/silicon/HDL/BcdToExcess3.v|
+Z22 !s90 -reportprogress|300|-work|work|-stats=none|/home/silicon/HDL/BcdToExcess3.v|
+!i113 1
+R11
+R12
+n@bcd@to@excess3
+vBcdToExcess3_TB
+R0
+!i10b 1
+!s100 0G>k;`DTV^nNMieoBODV?0
+R1
+IQhS;M:[YARQ`ak6dD0dJ71
+R2
+R3
+R18
+R19
+R20
+!i122 51
+L0 29 22
+R7
+r1
+!s85 0
+31
+R8
+R21
+R22
+!i113 1
+R11
+R12
+n@bcd@to@excess3_@t@b
+vBinToGray
+R0
+!i10b 1
+!s100 6FO[?PU?JRd:5H1C8]>XO1
+R1
+IVI7eEe26?_I6Agi>8=DbH1
+R2
+R3
+Z23 w1691827286
+Z24 8/home/silicon/HDL/BinToGray.v
+Z25 F/home/silicon/HDL/BinToGray.v
+!i122 49
+Z26 L0 1 8
+R7
+r1
+!s85 0
+31
+R8
+Z27 !s107 /home/silicon/HDL/BinToGray.v|
+Z28 !s90 -reportprogress|300|-work|work|-stats=none|/home/silicon/HDL/BinToGray.v|
+!i113 1
+R11
+R12
+n@bin@to@gray
+vBinToGray_TB
+R0
+!i10b 1
+!s100 FcY5>c:^jB1>7k54PD:Bg0
+R1
+I7UZRRYd?XkGT=DfQ0Y0h?3
+R2
+R3
+R23
+R24
+R25
+!i122 49
+Z29 L0 10 22
+R7
+r1
+!s85 0
+31
+R8
+R27
+R28
+!i113 1
+R11
+R12
+n@bin@to@gray_@t@b
+vExcess3ToBcd
+R0
+!i10b 1
+!s100 Xn:b^W:Y<L5zkF3G9oOz11
+R1
+Ie8@cLX=c9>Emii7IU^ehF2
+R2
+R3
+Z30 w1691845572
+Z31 8/home/silicon/HDL/Excess3ToBcd.v
+Z32 F/home/silicon/HDL/Excess3ToBcd.v
+!i122 52
+L0 1 10
+R7
+r1
+!s85 0
+31
+R8
+Z33 !s107 /home/silicon/HDL/Excess3ToBcd.v|
+Z34 !s90 -reportprogress|300|-work|work|-stats=none|/home/silicon/HDL/Excess3ToBcd.v|
+!i113 1
+R11
+R12
+n@excess3@to@bcd
+vExcess3ToBcd_TB
+R0
+!i10b 1
+!s100 1jLgSNB8MG?AOiCO6=OYn3
+R1
+Io^@60EA<zEU8Xk_8o3cY;3
+R2
+R3
+R30
+R31
+R32
+!i122 52
+L0 26 22
+R7
+r1
+!s85 0
+31
+R8
+R33
+R34
+!i113 1
+R11
+R12
+n@excess3@to@bcd_@t@b
+vFourBit_TB
+R0
+!i10b 1
+!s100 RW96zb@NFFg=IX9D^LF9?0
+R1
+IPSfM4XJ9hU?meB1V`]Kno0
+R2
+R3
+R4
+R5
+R6
+!i122 47
+L0 27 14
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+n@four@bit_@t@b
+vfull_adder
+R0
+!i10b 1
+!s100 F@OoXahT9=7BzK:TjQ2Q[2
+R1
+Ikm6IjEJPl_LzS`@Y<^;V>1
+R2
+R3
+R4
+R5
+R6
+!i122 47
+L0 2 9
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+vfullAdder
+R0
+!i10b 1
+!s100 6IXn`6hbMRbK@N=fF76h:1
+R1
+I?b0OYG;Qg:PdFYYH?eBXV0
+R2
+R3
+Z35 w1691928332
+Z36 8/home/silicon/HDL/Full_Adder_By_HA.v
+Z37 F/home/silicon/HDL/Full_Adder_By_HA.v
+!i122 56
+L0 8 6
+R7
+r1
+!s85 0
+31
+R8
+Z38 !s107 /home/silicon/HDL/Full_Adder_By_HA.v|
+Z39 !s90 -reportprogress|300|-work|work|-stats=none|/home/silicon/HDL/Full_Adder_By_HA.v|
+!i113 1
+R11
+R12
+nfull@adder
+vfullAdderTest
+R0
+!i10b 1
+!s100 M]5YBJbeU[ia46zc:?;6E0
+R1
+IT3UYhGhW^3VN2Nob]D5Zc2
+R2
+R3
+R35
+R36
+R37
+!i122 56
+L0 15 16
+R7
+r1
+!s85 0
+31
+R8
+R38
+R39
+!i113 1
+R11
+R12
+nfull@adder@test
+vGrayToBin
+R0
+!i10b 1
+!s100 iU132PD1Wok0VSigTfUm83
+R1
+IXo^1M9=K09JW@KL79I5Mj2
+R2
+R3
+Z40 w1691824748
+Z41 8/home/silicon/HDL/GrayToBin.v
+Z42 F/home/silicon/HDL/GrayToBin.v
+!i122 50
+R26
+R7
+r1
+!s85 0
+31
+R8
+Z43 !s107 /home/silicon/HDL/GrayToBin.v|
+Z44 !s90 -reportprogress|300|-work|work|-stats=none|/home/silicon/HDL/GrayToBin.v|
+!i113 1
+R11
+R12
+n@gray@to@bin
+vGrayToBin_TB
+R0
+!i10b 1
+!s100 LUiD<TD?b2hGYF]8ET1?Y2
+R1
+IcIW56B^e1cfdiUSl5:QR02
+R2
+R3
+R40
+R41
+R42
+!i122 50
+R29
+R7
+r1
+!s85 0
+31
+R8
+R43
+R44
+!i113 1
+R11
+R12
+n@gray@to@bin_@t@b
+vhalfAdder
+R0
+!i10b 1
+!s100 mdn_Z1mlUL4P64>eVKkJJ2
+R1
+Ii@Rh4^cPjaVz?^>ZO6X@e0
+R2
+R3
+R35
+R36
+R37
+!i122 56
+L0 1 6
+R7
+r1
+!s85 0
+31
+R8
+R38
+R39
+!i113 1
+R11
+R12
+nhalf@adder
+vjk_flip_flop
+!s110 1692540130
+!i10b 1
+!s100 7HFa8A^gj6Hnk9N=F9`CB1
+R1
+I[?89OKz<^N@SCMe?[V5890
+R2
+R3
+w1691846814
+8/home/silicon/HDL/JK_Flip_Flop.v
+F/home/silicon/HDL/JK_Flip_Flop.v
+!i122 62
+L0 6 17
+R7
+r1
+!s85 0
+31
+!s108 1692540130.000000
+!s107 /home/silicon/HDL/JK_Flip_Flop.v|
+!s90 -reportprogress|300|-work|work|-stats=none|/home/silicon/HDL/JK_Flip_Flop.v|
+!i113 1
+R11
+R12
+vmod_10_counter
+R0
+!i10b 1
+!s100 1n7Ue>a:<[2F44BgkIOSM2
+R1
+IbQ?ZmPnWT]dX[`ek6Hco71
+R2
+R3
+w1691848221
+8/home/silicon/HDL/Mod10Counter.v
+F/home/silicon/HDL/Mod10Counter.v
+!i122 54
+Z45 L0 1 14
+R7
+r1
+!s85 0
+31
+R8
+!s107 /home/silicon/HDL/Mod10Counter.v|
+!s90 -reportprogress|300|-work|work|-stats=none|/home/silicon/HDL/Mod10Counter.v|
+!i113 1
+R11
+R12
+vPYQuesion
+!s110 1692540162
+!i10b 1
+!s100 b7<Hm[GVZN7MV04EfNRH22
+R1
+IBzRbej5dn6aOe^nQ4=7;j3
+R2
+R3
+w1692540126
+8/home/silicon/HDL/PYQSSequence_Counter.v
+F/home/silicon/HDL/PYQSSequence_Counter.v
+!i122 63
+R45
+R7
+r1
+!s85 0
+31
+!s108 1692540162.000000
+!s107 /home/silicon/HDL/PYQSSequence_Counter.v|
+!s90 -reportprogress|300|-work|work|-stats=none|/home/silicon/HDL/PYQSSequence_Counter.v|
+!i113 1
+R11
+R12
+n@p@y@quesion
+vRandom_sequence
+Z46 !s110 1692471685
+!i10b 1
+!s100 na1DjHCK2:RA:3i1IM23F1
+R1
+IVYgdmzCjQj44bTB9mM<<[2
+R2
+R3
+Z47 w1692471681
+Z48 8/home/silicon/HDL/Random_sequence.v
+Z49 F/home/silicon/HDL/Random_sequence.v
+!i122 61
+L0 4 13
+R7
+r1
+!s85 0
+31
+Z50 !s108 1692471685.000000
+Z51 !s107 /home/silicon/HDL/Random_sequence.v|
+Z52 !s90 -reportprogress|300|-work|work|-stats=none|/home/silicon/HDL/Random_sequence.v|
+!i113 1
+R11
+R12
+n@random_sequence
+vRandom_sequence1
+R46
+!i10b 1
+!s100 ah^`g[jRP]SS1FQUdiJlY2
+R1
+IZjG84S]W:mZjJEXZIkLaO1
+R2
+R3
+R47
+R48
+R49
+!i122 61
+L0 19 20
+R7
+r1
+!s85 0
+31
+R50
+R51
+R52
+!i113 1
+R11
+R12
+n@random_sequence1
+vUp_Down_Counter
+R0
+!i10b 1
+!s100 1<JE143kTUzL^S?37b@:b0
+R1
+ICk6;Z;OIgVE4`<fK6]CkN3
+R2
+R3
+w1691851338
+8/home/silicon/HDL/Updown_Counter.v
+F/home/silicon/HDL/Updown_Counter.v
+!i122 55
+L0 6 19
+R7
+r1
+!s85 0
+31
+R8
+!s107 /home/silicon/HDL/Updown_Counter.v|
+!s90 -reportprogress|300|-work|work|-stats=none|/home/silicon/HDL/Updown_Counter.v|
+!i113 1
+R11
+R12
+n@up_@down_@counter

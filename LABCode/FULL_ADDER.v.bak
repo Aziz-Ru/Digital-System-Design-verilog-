@@ -1,0 +1,40 @@
+
+module full_adder(a,b,cin,s,cout);
+input a,b,cin;
+output s,cout;
+xor(w,a,b);
+and(c1,a,b);
+xor(s,w,cin);
+and(c2,cin,w);
+or(cout,c1,c2);
+endmodule
+module adder_subtractor(a,b,cin,s,cout);
+input [3:0]a,b;
+input cin;
+output [3:0] s;
+output cout;
+wire [3:0] w,c;
+xor(w[0],cin,b[0]);
+xor(w[1],cin,b[1]);
+xor(w[2],cin,b[2]);
+xor(w[3],cin,b[3]);
+full_adder fa0(a[0],w[0],cin,s[0],c[0]);
+full_adder fa1(a[1],w[1],c[0],s[1],c[1]);
+full_adder fa2(a[2],w[2],c[1],s[2],c[2]);
+full_adder fa3(a[3],w[3],c[2],s[3],cout);
+endmodule
+
+module FourBit_TB();
+reg [3:0] a,b;
+reg cin;
+wire [3:0] s;
+wire cout;
+adder_subtractor as(a,b,cin,s,cout);
+initial begin
+#0 a=4'd3;b=4'd5;cin=1'b0;
+#100 a=4'd10;b=4'd5;
+#100 a=4'd12;b=4'd15;
+end
+endmodule
+
+
