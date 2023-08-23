@@ -1,0 +1,232 @@
+# Loading project LAB
+# reading /home/silicon/intelFPGA/20.1/modelsim_ase/linuxaloem/../modelsim.ini
+# Loading project Practice
+# Compile of Binary_to_Gray.v failed with 1 errors.
+# Compile of Binary_to_Gray.v was successful.
+vsim work.TB_BG
+# vsim work.TB_BG 
+# Start time: 15:04:54 on Aug 23,2023
+# Loading work.TB_BG
+# Loading work.bin_to_gray
+add wave -position insertpoint  \
+sim:/TB_BG/b \
+sim:/TB_BG/g
+run
+quit -sim
+# End time: 15:05:11 on Aug 23,2023, Elapsed time: 0:00:17
+# Errors: 0, Warnings: 9
+# Compile of Binary_to_Gray.v was successful.
+vsim work.TB_BG
+# vsim work.TB_BG 
+# Start time: 15:06:39 on Aug 23,2023
+# Loading work.TB_BG
+# Loading work.bin_to_gray
+add wave -position insertpoint  \
+sim:/TB_BG/b \
+sim:/TB_BG/g
+run
+run
+run
+run
+run
+run
+run
+run
+run
+quit -sim
+# End time: 15:07:14 on Aug 23,2023, Elapsed time: 0:00:35
+# Errors: 0, Warnings: 2
+# Compile of Gray_to_Binary.v was successful.
+# Compile of Gray_to_Binary.v was successful.
+vsim work.TB_GB
+# vsim work.TB_GB 
+# Start time: 15:11:23 on Aug 23,2023
+# Loading work.TB_GB
+# Loading work.bin_to_gray
+add wave -position insertpoint  \
+sim:/TB_GB/g \
+sim:/TB_GB/b
+run
+run
+run
+run
+run
+run
+run
+quit -sim
+# End time: 15:13:34 on Aug 23,2023, Elapsed time: 0:02:11
+# Errors: 0, Warnings: 3
+# Compile of Gray_to_Binary.v was successful.
+vsim work.TB_GB
+# vsim work.TB_GB 
+# Start time: 15:16:19 on Aug 23,2023
+# Loading work.TB_GB
+# Loading work.bin_to_gray
+add wave -position insertpoint  \
+sim:/TB_GB/g \
+sim:/TB_GB/b
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+quit -sim
+# End time: 15:26:43 on Aug 23,2023, Elapsed time: 0:10:24
+# Errors: 0, Warnings: 2
+# Compile of Gray_to_Binary.v was successful.
+vsim work.TB_GB
+# vsim work.TB_GB 
+# Start time: 15:26:57 on Aug 23,2023
+# Loading work.TB_GB
+# Loading work.bin_to_gray
+add wave -position insertpoint  \
+sim:/TB_GB/g \
+sim:/TB_GB/b
+run
+run
+run
+run
+run
+quit -sim
+# End time: 15:28:50 on Aug 23,2023, Elapsed time: 0:01:53
+# Errors: 0, Warnings: 2
+# Compile of Gray_to_Binary.v was successful.
+# Compile of Gray_to_Binary.v was successful.
+vsim work.TB_GB
+# vsim work.TB_GB 
+# Start time: 15:31:40 on Aug 23,2023
+# Loading work.TB_GB
+# Loading work.gray_to_bin
+add wave -position insertpoint  \
+sim:/TB_GB/g \
+sim:/TB_GB/b
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+quit -sim
+# End time: 15:32:52 on Aug 23,2023, Elapsed time: 0:01:12
+# Errors: 0, Warnings: 3
+# Compile of Bcd_to_Excess3.v was successful.
+# Compile of Bcd_to_Excess3.v was successful.
+vsim work.TB_BX
+# vsim work.TB_BX 
+# Start time: 15:46:26 on Aug 23,2023
+# Loading work.TB_BX
+# Loading work.BCD_to_xs3
+add wave -position insertpoint  \
+sim:/TB_BX/b \
+sim:/TB_BX/x
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+quit -sim
+# End time: 15:47:57 on Aug 23,2023, Elapsed time: 0:01:31
+# Errors: 0, Warnings: 3
+# Compile of Excess3_to_BCD.v failed with 2 errors.
+# Compile of Excess3_to_BCD.v was successful.
+vsim work.xs3_to_BCD
+# vsim work.xs3_to_BCD 
+# Start time: 16:22:35 on Aug 23,2023
+# Loading work.xs3_to_BCD
+add wave -position insertpoint  \
+sim:/xs3_to_BCD/x \
+sim:/xs3_to_BCD/b
+force -freeze sim:/xs3_to_BCD/x 1100 0
+force -freeze sim:/xs3_to_BCD/x 1100 0
+run
+quit -sim
+# End time: 16:23:42 on Aug 23,2023, Elapsed time: 0:01:07
+# Errors: 0, Warnings: 3
+# Compile of Excess3_to_BCD.v was successful.
+vsim work.TB_XB
+# vsim work.TB_XB 
+# Start time: 16:25:57 on Aug 23,2023
+# Loading work.TB_XB
+# ** Error: (vsim-3037) Missing instance name in instantiation of 'xs3_to_BCD'.
+#    Time: 0 ps  Iteration: 0  Instance: /TB_XB File: /home/silicon/HDL/LastDayPractice/Excess3_to_BCD.v Line: 23
+# Error loading design
+# End time: 16:25:57 on Aug 23,2023, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 2
+# Compile of Excess3_to_BCD.v was successful.
+vsim work.TB_XB
+# vsim work.TB_XB 
+# Start time: 16:26:19 on Aug 23,2023
+# Loading work.TB_XB
+# Loading work.xs3_to_BCD
+add wave -position insertpoint  \
+sim:/TB_XB/x \
+sim:/TB_XB/b
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+quit -sim
+# End time: 16:32:12 on Aug 23,2023, Elapsed time: 0:05:53
+# Errors: 0, Warnings: 2
+# Compile of Excess3_to_BCD.v was successful.
+vsim work.TB_XB
+# vsim work.TB_XB 
+# Start time: 16:36:06 on Aug 23,2023
+# Loading work.TB_XB
+# Loading work.xs3_to_BCD
+add wave -position insertpoint  \
+sim:/TB_XB/x \
+sim:/TB_XB/b
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+quit -sim
+# End time: 16:38:09 on Aug 23,2023, Elapsed time: 0:02:03
+# Errors: 0, Warnings: 2
+# Compile of Bcd_to_Excess3.v was successful.
