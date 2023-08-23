@@ -15,5 +15,5 @@ endmodule
 
 /*
 During simulation You need to clk to clk 
-firstly clr force 0 then run 1 time then force it 1 
+firstly clr force 0 then clr set no force
 */
