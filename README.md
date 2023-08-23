@@ -32,8 +32,9 @@ Verilog is a hardware description language (HDL) used for designing and modeling
 
 
 ## Expriments:
--
--
+- [Full Adder](https://github.com/Aziz-Ru/Digital-System-Design-verilog-/blob/main/LABCode/Full_Adder_By_HA.v)
+- [JK Flip Flop](https://github.com/Aziz-Ru/Digital-System-Design-verilog-/blob/main/LABCode/JK_Flip_Flop.v)
+  
 |Expriment Name|Basics|Verilog Code|
 |---------|------|------------|
 |Binary To Gray & Gray To Binary|[Theory From GeeksForGeeks](https://www.geeksforgeeks.org/code-converters-binary-to-from-gray-code) |[BinToGray.v](https://github.com/Aziz-Ru/Digital-System-Design-verilog-/blob/main/LABCode/BinToGray.v) & [ GrayToBin.v](https://github.com/Aziz-Ru/Digital-System-Design-verilog-/blob/main/LABCode/GrayToBin.v)|
