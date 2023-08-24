@@ -42,13 +42,12 @@ Verilog is a hardware description language (HDL) used for designing and modeling
 |4-bit binary Adder-Subtractor |[Theory From GeeksForGeeks](https://www.geeksforgeeks.org/4-bit-binary-adder-subtractor/)|[BinaryAdder](https://github.com/Aziz-Ru/Digital-System-Design-verilog-/blob/main/LABCode/FULL_ADDER.v)|
 |BCD Adder in Digital Logic|[Theory From GeeksForGeeks](https://www.geeksforgeeks.org/bcd-adder-in-digital-logic/)|[BCD_ADDER.v](https://github.com/Aziz-Ru/Digital-System-Design-verilog-/blob/main/LABCode/BCD_ADDER.v)|
 |4 bit asynchronous mod 10 counter|[Youtube](https://www.youtube.com/watch?v=iEj1peAuxvg) |[Mod10Counter.v](https://github.com/Aziz-Ru/Digital-System-Design-verilog-/blob/main/LABCode/Mod10Counter.v)|
-|3 bit synchronous up-down counter|[Elctronics Tutorial](https://www.electronics-tutorials.ws/counter/count_4.html)|[Updown_Counter.v](https://github.com/Aziz-Ru/Digital-System-Design-verilog-/blob/main/LABCode/Updown_Counter.v)|
+|3 bit synchronous up-down counter|[Youtube](https://www.youtube.com/watch?v=svFUEJkoeVY)|[Updown_Counter.v](https://github.com/Aziz-Ru/Digital-System-Design-verilog-/blob/main/LABCode/Updown_Counter.v)|
 |Random_sequence counter |[Youtube](https://www.youtube.com/watch?v=-tl59_wGPTg&t=744s) |[Random_sequence.v](https://github.com/Aziz-Ru/Digital-System-Design-verilog-/blob/main/LABCode/Random_sequence.v)|
 
 ## Acknowledgements
 
 -  [chipverify](https://www.chipverify.com/verilog/verilog-gate-level-modeling)
  - [Geeksforgeeks](https://www.geeksforgeeks.org/)
- - [Electronics-Tutorials](https://www.electronics-tutorials.ws)
  - [Youtube](https://www.youtube.com/watch?v=-tl59_wGPTg&t=744s)
 
