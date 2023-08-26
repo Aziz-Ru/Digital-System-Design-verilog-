@@ -1,17 +1,17 @@
-/home/silicon/HDL/LastDayPractice/FourBit_Adder_subtractor.v {1 {vlog -work work -stats=none /home/silicon/HDL/LastDayPractice/FourBit_Adder_subtractor.v
+/home/silicon/HDL/LastDayPractice/Full_Adder.v {1 {vlog -work work -stats=none /home/silicon/HDL/LastDayPractice/Full_Adder.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module full_adder
+
+Top level modules:
+	full_adder
+
+} {} {}} /home/silicon/HDL/LastDayPractice/FourBit_Adder_subtractor.v {1 {vlog -work work -stats=none /home/silicon/HDL/LastDayPractice/FourBit_Adder_subtractor.v
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
 -- Compiling module Adder_Subtractor
 -- Compiling module TB_AS
 
 Top level modules:
 	TB_AS
-
-} {} {}} /home/silicon/HDL/LastDayPractice/Full_Adder.v {1 {vlog -work work -stats=none /home/silicon/HDL/LastDayPractice/Full_Adder.v
-Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
--- Compiling module full_adder
-
-Top level modules:
-	full_adder
 
 } {} {}} /home/silicon/HDL/LastDayPractice/JK_flip_flop.v {1 {vlog -work work -stats=none /home/silicon/HDL/LastDayPractice/JK_flip_flop.v
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
@@ -20,21 +20,12 @@ Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 
 Top level modules:
 	master_slave
 
-} {} {}} /home/silicon/HDL/LastDayPractice/Bcd_Adder.v {1 {vlog -work work -stats=none /home/silicon/HDL/LastDayPractice/Bcd_Adder.v
+} {} {}} /home/silicon/HDL/LastDayPractice/mod13.v {1 {vlog -work work -stats=none /home/silicon/HDL/LastDayPractice/mod13.v
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
--- Compiling module Bcd_Adder
--- Compiling module TB_BA
+-- Compiling module mod13
 
 Top level modules:
-	TB_BA
-
-} {} {}} /home/silicon/HDL/LastDayPractice/Excess3_to_BCD.v {1 {vlog -work work -stats=none /home/silicon/HDL/LastDayPractice/Excess3_to_BCD.v
-Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
--- Compiling module xs3_to_BCD
--- Compiling module TB_XB
-
-Top level modules:
-	TB_XB
+	mod13
 
 } {} {}} /home/silicon/HDL/LastDayPractice/Bcd_to_Excess3.v {1 {vlog -work work -stats=none /home/silicon/HDL/LastDayPractice/Bcd_to_Excess3.v
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
@@ -44,13 +35,21 @@ Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 
 Top level modules:
 	TB_BX
 
-} {} {}} /home/silicon/HDL/LastDayPractice/Binary_to_Gray.v {1 {vlog -work work -stats=none /home/silicon/HDL/LastDayPractice/Binary_to_Gray.v
+} {} {}} /home/silicon/HDL/LastDayPractice/Excess3_to_BCD.v {1 {vlog -work work -stats=none /home/silicon/HDL/LastDayPractice/Excess3_to_BCD.v
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
--- Compiling module bin_to_gray
--- Compiling module TB_BG
+-- Compiling module xs3_to_BCD
+-- Compiling module TB_XB
 
 Top level modules:
-	TB_BG
+	TB_XB
+
+} {} {}} /home/silicon/HDL/LastDayPractice/Bcd_Adder.v {1 {vlog -work work -stats=none /home/silicon/HDL/LastDayPractice/Bcd_Adder.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module Bcd_Adder
+-- Compiling module TB_BA
+
+Top level modules:
+	TB_BA
 
 } {} {}} /home/silicon/HDL/LastDayPractice/Gray_to_Binary.v {1 {vlog -work work -stats=none /home/silicon/HDL/LastDayPractice/Gray_to_Binary.v
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
@@ -59,5 +58,13 @@ Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 
 
 Top level modules:
 	TB_GB
+
+} {} {}} /home/silicon/HDL/LastDayPractice/Binary_to_Gray.v {1 {vlog -work work -stats=none /home/silicon/HDL/LastDayPractice/Binary_to_Gray.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module bin_to_gray
+-- Compiling module TB_BG
+
+Top level modules:
+	TB_BG
 
 } {} {}}

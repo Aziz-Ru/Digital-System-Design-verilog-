@@ -21,89 +21,89 @@ Z4 w1692793960
 Z5 8/home/silicon/HDL/LastDayPractice/FourBit_Adder_subtractor.v
 Z6 F/home/silicon/HDL/LastDayPractice/FourBit_Adder_subtractor.v
 !i122 19
-L0 1 16
-Z7 OV;L;2020.1;71
+Z7 L0 1 16
+Z8 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z8 !s108 1692793986.000000
-Z9 !s107 /home/silicon/HDL/LastDayPractice/FourBit_Adder_subtractor.v|
-Z10 !s90 -reportprogress|300|-work|work|-stats=none|/home/silicon/HDL/LastDayPractice/FourBit_Adder_subtractor.v|
+Z9 !s108 1692793986.000000
+Z10 !s107 /home/silicon/HDL/LastDayPractice/FourBit_Adder_subtractor.v|
+Z11 !s90 -reportprogress|300|-work|work|-stats=none|/home/silicon/HDL/LastDayPractice/FourBit_Adder_subtractor.v|
 !i113 1
-Z11 o-work work
-Z12 tCvgOpt 0
+Z12 o-work work
+Z13 tCvgOpt 0
 n@adder_@subtractor
 vBcd_Adder
-Z13 !s110 1692803985
+Z14 !s110 1692803985
 !i10b 1
 !s100 95@OEV^C;P[b@JDHD0M`Y0
 R1
 IM8ej5iW[064h=TGziDekc3
 R2
 R3
-Z14 w1692795752
-Z15 8/home/silicon/HDL/LastDayPractice/Bcd_Adder.v
-Z16 F/home/silicon/HDL/LastDayPractice/Bcd_Adder.v
+Z15 w1692795752
+Z16 8/home/silicon/HDL/LastDayPractice/Bcd_Adder.v
+Z17 F/home/silicon/HDL/LastDayPractice/Bcd_Adder.v
 !i122 22
-Z17 L0 1 14
-R7
+Z18 L0 1 14
+R8
 r1
 !s85 0
 31
-Z18 !s108 1692803985.000000
-Z19 !s107 /home/silicon/HDL/LastDayPractice/Bcd_Adder.v|
-Z20 !s90 -reportprogress|300|-work|work|-stats=none|/home/silicon/HDL/LastDayPractice/Bcd_Adder.v|
+Z19 !s108 1692803985.000000
+Z20 !s107 /home/silicon/HDL/LastDayPractice/Bcd_Adder.v|
+Z21 !s90 -reportprogress|300|-work|work|-stats=none|/home/silicon/HDL/LastDayPractice/Bcd_Adder.v|
 !i113 1
-R11
 R12
+R13
 n@bcd_@adder
 vBCD_to_xs3
-Z21 !s110 1692787333
+Z22 !s110 1692787333
 !i10b 1
 !s100 l8_XKm8^:dZi1JOz16jSE2
 R1
 IC75^[TUiPkYmm??<?7dPX1
 R2
 R3
-Z22 w1692787311
-Z23 8/home/silicon/HDL/LastDayPractice/Bcd_to_Excess3.v
-Z24 F/home/silicon/HDL/LastDayPractice/Bcd_to_Excess3.v
+Z23 w1692787311
+Z24 8/home/silicon/HDL/LastDayPractice/Bcd_to_Excess3.v
+Z25 F/home/silicon/HDL/LastDayPractice/Bcd_to_Excess3.v
 !i122 14
-R17
-R7
+R18
+R8
 r1
 !s85 0
 31
-Z25 !s108 1692787333.000000
-Z26 !s107 /home/silicon/HDL/LastDayPractice/Bcd_to_Excess3.v|
-Z27 !s90 -reportprogress|300|-work|work|-stats=none|/home/silicon/HDL/LastDayPractice/Bcd_to_Excess3.v|
+Z26 !s108 1692787333.000000
+Z27 !s107 /home/silicon/HDL/LastDayPractice/Bcd_to_Excess3.v|
+Z28 !s90 -reportprogress|300|-work|work|-stats=none|/home/silicon/HDL/LastDayPractice/Bcd_to_Excess3.v|
 !i113 1
-R11
 R12
+R13
 n@b@c@d_to_xs3
 vbin_to_gray
-Z28 !s110 1692781590
+Z29 !s110 1692781590
 !i10b 1
 !s100 V?LeQNI:SkBSEYlML`e4@3
 R1
 I<Vma^UQz13lE@G:hNoXCb0
 R2
 R3
-Z29 w1692781588
-Z30 8/home/silicon/HDL/LastDayPractice/Binary_to_Gray.v
-Z31 F/home/silicon/HDL/LastDayPractice/Binary_to_Gray.v
+Z30 w1692781588
+Z31 8/home/silicon/HDL/LastDayPractice/Binary_to_Gray.v
+Z32 F/home/silicon/HDL/LastDayPractice/Binary_to_Gray.v
 !i122 2
 L0 1 8
-R7
+R8
 r1
 !s85 0
 31
-Z32 !s108 1692781590.000000
-Z33 !s107 /home/silicon/HDL/LastDayPractice/Binary_to_Gray.v|
-Z34 !s90 -reportprogress|300|-work|work|-stats=none|/home/silicon/HDL/LastDayPractice/Binary_to_Gray.v|
+Z33 !s108 1692781590.000000
+Z34 !s107 /home/silicon/HDL/LastDayPractice/Binary_to_Gray.v|
+Z35 !s90 -reportprogress|300|-work|work|-stats=none|/home/silicon/HDL/LastDayPractice/Binary_to_Gray.v|
 !i113 1
-R11
 R12
+R13
 vfull_adder
 !s110 1692792221
 !i10b 1
@@ -117,7 +117,7 @@ w1692792216
 F/home/silicon/HDL/LastDayPractice/Full_Adder.v
 !i122 16
 L0 1 9
-R7
+R8
 r1
 !s85 0
 31
@@ -125,31 +125,31 @@ r1
 !s107 /home/silicon/HDL/LastDayPractice/Full_Adder.v|
 !s90 -reportprogress|300|-work|work|-stats=none|/home/silicon/HDL/LastDayPractice/Full_Adder.v|
 !i113 1
-R11
 R12
+R13
 vgray_to_bin
-Z35 !s110 1692783092
+Z36 !s110 1692783092
 !i10b 1
 !s100 eD4[?cAFCQoI??0NdF:0T1
 R1
 I<X[YR^@`J0Sl?4UJ>]=9?0
 R2
 R3
-Z36 w1692783090
-Z37 8/home/silicon/HDL/LastDayPractice/Gray_to_Binary.v
-Z38 F/home/silicon/HDL/LastDayPractice/Gray_to_Binary.v
+Z37 w1692783090
+Z38 8/home/silicon/HDL/LastDayPractice/Gray_to_Binary.v
+Z39 F/home/silicon/HDL/LastDayPractice/Gray_to_Binary.v
 !i122 8
 L0 2 10
-R7
+R8
 r1
 !s85 0
 31
-Z39 !s108 1692783092.000000
-Z40 !s107 /home/silicon/HDL/LastDayPractice/Gray_to_Binary.v|
-Z41 !s90 -reportprogress|300|-work|work|-stats=none|/home/silicon/HDL/LastDayPractice/Gray_to_Binary.v|
+Z40 !s108 1692783092.000000
+Z41 !s107 /home/silicon/HDL/LastDayPractice/Gray_to_Binary.v|
+Z42 !s90 -reportprogress|300|-work|work|-stats=none|/home/silicon/HDL/LastDayPractice/Gray_to_Binary.v|
 !i113 1
-R11
 R12
+R13
 vmaster_slave
 !s110 1692806145
 !i10b 1
@@ -162,8 +162,8 @@ w1692806090
 8/home/silicon/HDL/LastDayPractice/JK_flip_flop.v
 F/home/silicon/HDL/LastDayPractice/JK_flip_flop.v
 !i122 28
-Z42 L0 1 17
-R7
+Z43 L0 1 17
+R8
 r1
 !s85 0
 31
@@ -171,31 +171,54 @@ r1
 !s107 /home/silicon/HDL/LastDayPractice/JK_flip_flop.v|
 !s90 -reportprogress|300|-work|work|-stats=none|/home/silicon/HDL/LastDayPractice/JK_flip_flop.v|
 !i113 1
-R11
 R12
+R13
 vmod10
-!s110 1692807775
+!s110 1693063380
 !i10b 1
-!s100 <LESaAZ5O7zP_AIGeL5?c0
+!s100 ZGLi9oYK7BSf961:7710i3
 R1
-IR0;CoGMAoUS2gWKdJ`A[E1
+In>MWc3P9YcHf5Rjj2aL8T2
 R2
 R3
-w1692806832
+w1693063362
 8/home/silicon/HDL/LastDayPractice/MOD10.v
 F/home/silicon/HDL/LastDayPractice/MOD10.v
-!i122 35
-R17
-R7
+!i122 47
+L0 1 15
+R8
 r1
 !s85 0
 31
-!s108 1692807774.000000
+!s108 1693063380.000000
 !s107 /home/silicon/HDL/LastDayPractice/MOD10.v|
 !s90 -reportprogress|300|-work|work|-stats=none|/home/silicon/HDL/LastDayPractice/MOD10.v|
 !i113 1
-R11
 R12
+R13
+vmod13
+!s110 1693063886
+!i10b 1
+!s100 6>]Z0dkz>:A`z3A0m<jG53
+R1
+I3WM0Kb4RKfWiRRZYmnlJ:1
+R2
+R3
+w1693063791
+8/home/silicon/HDL/LastDayPractice/mod13.v
+F/home/silicon/HDL/LastDayPractice/mod13.v
+!i122 54
+R7
+R8
+r1
+!s85 0
+31
+!s108 1693063886.000000
+!s107 /home/silicon/HDL/LastDayPractice/mod13.v|
+!s90 -reportprogress|300|-work|work|-stats=none|/home/silicon/HDL/LastDayPractice/mod13.v|
+!i113 1
+R12
+R13
 vTB_AS
 R0
 !i10b 1
@@ -209,136 +232,136 @@ R5
 R6
 !i122 19
 L0 18 15
-R7
+R8
 r1
 !s85 0
 31
-R8
 R9
 R10
-!i113 1
 R11
+!i113 1
 R12
+R13
 n@t@b_@a@s
 vTB_BA
-R13
+R14
 !i10b 1
 !s100 I>iaNWPGlHAK;22<9@oP00
 R1
 IaGKRHG10h9oYFHaX5R>^b3
 R2
 R3
-R14
 R15
 R16
+R17
 !i122 22
 L0 16 16
-R7
+R8
 r1
 !s85 0
 31
-R18
 R19
 R20
+R21
 !i113 1
-R11
 R12
+R13
 n@t@b_@b@a
 vTB_BG
-R28
+R29
 !i10b 1
 !s100 KDFg`hz5ez^b:>4MJLG:C0
 R1
 I9NLFbb7C7[gDAchSP9`mA0
 R2
 R3
-R29
 R30
 R31
+R32
 !i122 2
 L0 10 23
-R7
+R8
 r1
 !s85 0
 31
-R32
 R33
 R34
+R35
 !i113 1
-R11
 R12
+R13
 n@t@b_@b@g
 vTB_BX
-R21
+R22
 !i10b 1
 !s100 f<N<Je?Vb3bDS_jAhiMO:3
 R1
 I>k@R=e=iXYf2GR5_D=[k52
 R2
 R3
-R22
 R23
 R24
+R25
 !i122 14
 L0 16 23
-R7
+R8
 r1
 !s85 0
 31
-R25
 R26
 R27
+R28
 !i113 1
-R11
 R12
+R13
 n@t@b_@b@x
 vTB_GB
-R35
+R36
 !i10b 1
 !s100 hF^e0WSVVcV2N`lWgOaLz0
 R1
 I]TEWhWKDMNDMcMC`U4?6V1
 R2
 R3
-R36
 R37
 R38
+R39
 !i122 8
 L0 13 23
-R7
+R8
 r1
 !s85 0
 31
-R39
 R40
 R41
+R42
 !i113 1
-R11
 R12
+R13
 n@t@b_@g@b
 vTB_XB
-Z43 !s110 1692786953
+Z44 !s110 1692786953
 !i10b 1
 !s100 NEffT^IKjFAL=ahWn>fU_1
 R1
 I@_BDmzd;7[Ed3fiT1UMnb2
 R2
 R3
-Z44 w1692786952
-Z45 8/home/silicon/HDL/LastDayPractice/Excess3_to_BCD.v
-Z46 F/home/silicon/HDL/LastDayPractice/Excess3_to_BCD.v
+Z45 w1692786952
+Z46 8/home/silicon/HDL/LastDayPractice/Excess3_to_BCD.v
+Z47 F/home/silicon/HDL/LastDayPractice/Excess3_to_BCD.v
 !i122 13
 L0 15 23
-R7
+R8
 r1
 !s85 0
 31
-Z47 !s108 1692786953.000000
-Z48 !s107 /home/silicon/HDL/LastDayPractice/Excess3_to_BCD.v|
-Z49 !s90 -reportprogress|300|-work|work|-stats=none|/home/silicon/HDL/LastDayPractice/Excess3_to_BCD.v|
+Z48 !s108 1692786953.000000
+Z49 !s107 /home/silicon/HDL/LastDayPractice/Excess3_to_BCD.v|
+Z50 !s90 -reportprogress|300|-work|work|-stats=none|/home/silicon/HDL/LastDayPractice/Excess3_to_BCD.v|
 !i113 1
-R11
 R12
+R13
 n@t@b_@x@b
 vup_down_counter
 !s110 1692808826
@@ -352,8 +375,8 @@ w1692808824
 8/home/silicon/HDL/LastDayPractice/up_down_counter.v
 F/home/silicon/HDL/LastDayPractice/up_down_counter.v
 !i122 37
-R42
-R7
+R43
+R8
 r1
 !s85 0
 31
@@ -361,29 +384,29 @@ r1
 !s107 /home/silicon/HDL/LastDayPractice/up_down_counter.v|
 !s90 -reportprogress|300|-work|work|-stats=none|/home/silicon/HDL/LastDayPractice/up_down_counter.v|
 !i113 1
-R11
 R12
+R13
 vxs3_to_BCD
-R43
+R44
 !i10b 1
 !s100 9Tdh@SW4QRo6OiHk`gCGf2
 R1
 IK2ecW?bDn=`h3@Po4k8NV1
 R2
 R3
-R44
 R45
 R46
+R47
 !i122 13
-R17
-R7
+R18
+R8
 r1
 !s85 0
 31
-R47
 R48
 R49
+R50
 !i113 1
-R11
 R12
+R13
 nxs3_to_@b@c@d

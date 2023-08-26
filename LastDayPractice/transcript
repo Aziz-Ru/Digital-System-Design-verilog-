@@ -1,118 +1,543 @@
 # Loading project Practice
-# Compile of Full_Adder.v was successful.
-# Compile of Full_Adder.v was successful.
-vsim work.full_adder
-# vsim work.full_adder 
-# Start time: 18:03:50 on Aug 23,2023
-# Loading work.full_adder
-add wave -position insertpoint  \
-sim:/full_adder/a \
-sim:/full_adder/b \
-sim:/full_adder/cin \
-sim:/full_adder/s \
-sim:/full_adder/cout
-force -freeze sim:/full_adder/a 0 0
-force -freeze sim:/full_adder/b 1 0
-force -freeze sim:/full_adder/cin 0 0
+# Compile of mod13.v was successful.
+# Load canceled
+# Compile of mod13.v was successful.
+vsim work.mod13
+# vsim work.mod13 
+# Start time: 20:18:36 on Aug 26,2023
+# Loading work.mod13
+# Loading work.master_slave
+add wave -position insertpoint sim:/mod13/*
+force -freeze sim:/mod13/clk 1 0, 0 {50 ps} -r 100
+force -freeze sim:/mod13/clr 0 0
 run
-force -freeze sim:/full_adder/a St1 0
+noforce sim:/mod13/clr
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+#############  Autofindloop Analysis  ###############
+#############  Loop found at time 1350 ps ###############
+#       Signal: /mod13/q @ sub-iteration 0 at Value St1 (/home/silicon/HDL/LastDayPractice/mod13.v:4)
+#       Signal: /mod13/ms4/n1 @ sub-iteration 0 at Value St1 (/home/silicon/HDL/LastDayPractice/JK_flip_flop.v:4)
+#       Signal: /mod13/ms4/n4 @ sub-iteration 0 at Value St1 (/home/silicon/HDL/LastDayPractice/JK_flip_flop.v:4)
+#       Signal: /mod13/ms4/n5 @ sub-iteration 0 at Value St1 (/home/silicon/HDL/LastDayPractice/JK_flip_flop.v:4)
+#       Signal: /mod13/qb @ sub-iteration 0 at Value St1 (/home/silicon/HDL/LastDayPractice/mod13.v:6)
+#       Signal: /mod13/ms4/n2 @ sub-iteration 0 at Value St1 (/home/silicon/HDL/LastDayPractice/JK_flip_flop.v:4)
+#       Signal: /mod13/ms4/n3 @ sub-iteration 0 at Value St1 (/home/silicon/HDL/LastDayPractice/JK_flip_flop.v:4)
+#       Signal: /mod13/ms4/n6 @ sub-iteration 0 at Value St1 (/home/silicon/HDL/LastDayPractice/JK_flip_flop.v:4)
+#       Signal: /mod13/q @ sub-iteration 0 at Value St1 (/home/silicon/HDL/LastDayPractice/mod13.v:4)
+#       Signal: /mod13/ms3/n1 @ sub-iteration 0 at Value St1 (/home/silicon/HDL/LastDayPractice/JK_flip_flop.v:4)
+#       Signal: /mod13/ms3/n4 @ sub-iteration 0 at Value St1 (/home/silicon/HDL/LastDayPractice/JK_flip_flop.v:4)
+#       Signal: /mod13/ms3/n5 @ sub-iteration 0 at Value St1 (/home/silicon/HDL/LastDayPractice/JK_flip_flop.v:4)
+#       Signal: /mod13/qb @ sub-iteration 0 at Value St1 (/home/silicon/HDL/LastDayPractice/mod13.v:6)
+#       Signal: /mod13/ms4/ct @ sub-iteration 0 at Value St1 (/home/silicon/HDL/LastDayPractice/JK_flip_flop.v:4)
+#       Signal: /mod13/ms3/n2 @ sub-iteration 0 at Value St1 (/home/silicon/HDL/LastDayPractice/JK_flip_flop.v:4)
+#       Signal: /mod13/ms3/n3 @ sub-iteration 0 at Value St1 (/home/silicon/HDL/LastDayPractice/JK_flip_flop.v:4)
+#       Signal: /mod13/ms3/n6 @ sub-iteration 0 at Value St1 (/home/silicon/HDL/LastDayPractice/JK_flip_flop.v:4)
+#       Signal: /mod13/q @ sub-iteration 0 at Value St1 (/home/silicon/HDL/LastDayPractice/mod13.v:4)
+#       Signal: /mod13/ms2/n6 @ sub-iteration 0 at Value St1 (/home/silicon/HDL/LastDayPractice/JK_flip_flop.v:4)
+#       Signal: /mod13/ms2/n3 @ sub-iteration 0 at Value St1 (/home/silicon/HDL/LastDayPractice/JK_flip_flop.v:4)
+#       Signal: /mod13/ms3/ct @ sub-iteration 0 at Value St1 (/home/silicon/HDL/LastDayPractice/JK_flip_flop.v:4)
+#       Signal: /mod13/qb @ sub-iteration 0 at Value St1 (/home/silicon/HDL/LastDayPractice/mod13.v:6)
+#       Signal: /mod13/ms2/n5 @ sub-iteration 0 at Value St1 (/home/silicon/HDL/LastDayPractice/JK_flip_flop.v:4)
+#       Signal: /mod13/ms2/n4 @ sub-iteration 0 at Value St1 (/home/silicon/HDL/LastDayPractice/JK_flip_flop.v:4)
+#   Active process: /mod13/ms2/#NAND#7 @ sub-iteration 1
+#     Source: /home/silicon/HDL/LastDayPractice/JK_flip_flop.v:7
+#   Active process: /mod13/ms2/#NAND#13 @ sub-iteration 1
+#     Source: /home/silicon/HDL/LastDayPractice/JK_flip_flop.v:13
+#   Active process: /mod13/ms2/#NAND#5 @ sub-iteration 1
+#     Source: /home/silicon/HDL/LastDayPractice/JK_flip_flop.v:5
+#   Active process: /mod13/ms2/#NAND#14 @ sub-iteration 1
+#     Source: /home/silicon/HDL/LastDayPractice/JK_flip_flop.v:14
+#   Active process: /mod13/ms2/#NAND#8 @ sub-iteration 1
+#     Source: /home/silicon/HDL/LastDayPractice/JK_flip_flop.v:8
+#   Active process: /mod13/ms2/#NAND#12 @ sub-iteration 1
+#     Source: /home/silicon/HDL/LastDayPractice/JK_flip_flop.v:12
+#   Active process: /mod13/ms2/#NAND#6 @ sub-iteration 1
+#     Source: /home/silicon/HDL/LastDayPractice/JK_flip_flop.v:6
+#   Active process: /mod13/ms2/#NAND#15 @ sub-iteration 1
+#     Source: /home/silicon/HDL/LastDayPractice/JK_flip_flop.v:15
+#   Active process: /mod13/ms3/#NOT#10 @ sub-iteration 1
+#     Source: /home/silicon/HDL/LastDayPractice/JK_flip_flop.v:10
+#   Active process: /mod13/ms3/#NAND#12 @ sub-iteration 1
+#     Source: /home/silicon/HDL/LastDayPractice/JK_flip_flop.v:12
+#   Active process: /mod13/ms3/#NAND#8 @ sub-iteration 1
+#     Source: /home/silicon/HDL/LastDayPractice/JK_flip_flop.v:8
+#   Active process: /mod13/ms3/#NAND#5 @ sub-iteration 1
+#     Source: /home/silicon/HDL/LastDayPractice/JK_flip_flop.v:5
+#   Active process: /mod13/ms3/#NAND#14 @ sub-iteration 1
+#     Source: /home/silicon/HDL/LastDayPractice/JK_flip_flop.v:14
+#   Active process: /mod13/ms3/#NAND#13 @ sub-iteration 1
+#     Source: /home/silicon/HDL/LastDayPractice/JK_flip_flop.v:13
+#   Active process: /mod13/ms3/#NAND#7 @ sub-iteration 1
+#     Source: /home/silicon/HDL/LastDayPractice/JK_flip_flop.v:7
+#   Active process: /mod13/ms3/#NAND#6 @ sub-iteration 1
+#     Source: /home/silicon/HDL/LastDayPractice/JK_flip_flop.v:6
+#   Active process: /mod13/ms3/#NAND#15 @ sub-iteration 1
+#     Source: /home/silicon/HDL/LastDayPractice/JK_flip_flop.v:15
+#   Active process: /mod13/ms4/#NOT#10 @ sub-iteration 1
+#     Source: /home/silicon/HDL/LastDayPractice/JK_flip_flop.v:10
+#   Active process: /mod13/ms4/#NAND#12 @ sub-iteration 1
+#     Source: /home/silicon/HDL/LastDayPractice/JK_flip_flop.v:12
+#   Active process: /mod13/ms4/#NAND#8 @ sub-iteration 1
+#     Source: /home/silicon/HDL/LastDayPractice/JK_flip_flop.v:8
+#   Active process: /mod13/ms4/#NAND#5 @ sub-iteration 1
+#     Source: /home/silicon/HDL/LastDayPractice/JK_flip_flop.v:5
+#   Active process: /mod13/ms4/#NAND#14 @ sub-iteration 1
+#     Source: /home/silicon/HDL/LastDayPractice/JK_flip_flop.v:14
+#   Active process: /mod13/ms4/#NAND#13 @ sub-iteration 1
+#     Source: /home/silicon/HDL/LastDayPractice/JK_flip_flop.v:13
+#   Active process: /mod13/ms4/#NAND#7 @ sub-iteration 1
+#     Source: /home/silicon/HDL/LastDayPractice/JK_flip_flop.v:7
+#   Active process: /mod13/ms4/#NAND#6 @ sub-iteration 1
+#     Source: /home/silicon/HDL/LastDayPractice/JK_flip_flop.v:6
+#   Active process: /mod13/ms4/#NAND#15 @ sub-iteration 1
+#     Source: /home/silicon/HDL/LastDayPractice/JK_flip_flop.v:15
+#   Active process: /mod13/#NAND#13 @ sub-iteration 1
+#     Source: /home/silicon/HDL/LastDayPractice/mod13.v:13
+#       Signal: /mod13/qb @ sub-iteration 2 at Value St0 (/home/silicon/HDL/LastDayPractice/mod13.v:6)
+#       Signal: /mod13/ms4/n2 @ sub-iteration 2 at Value St0 (/home/silicon/HDL/LastDayPractice/JK_flip_flop.v:4)
+#       Signal: /mod13/ms4/n3 @ sub-iteration 2 at Value St0 (/home/silicon/HDL/LastDayPractice/JK_flip_flop.v:4)
+#       Signal: /mod13/ms4/n6 @ sub-iteration 2 at Value St0 (/home/silicon/HDL/LastDayPractice/JK_flip_flop.v:4)
+#       Signal: /mod13/q @ sub-iteration 2 at Value St0 (/home/silicon/HDL/LastDayPractice/mod13.v:4)
+#       Signal: /mod13/ms4/n1 @ sub-iteration 2 at Value St0 (/home/silicon/HDL/LastDayPractice/JK_flip_flop.v:4)
+#       Signal: /mod13/ms4/n4 @ sub-iteration 2 at Value St0 (/home/silicon/HDL/LastDayPractice/JK_flip_flop.v:4)
+#       Signal: /mod13/ms4/n5 @ sub-iteration 2 at Value St0 (/home/silicon/HDL/LastDayPractice/JK_flip_flop.v:4)
+#       Signal: /mod13/ms4/ct @ sub-iteration 2 at Value St0 (/home/silicon/HDL/LastDayPractice/JK_flip_flop.v:4)
+#       Signal: /mod13/qb @ sub-iteration 2 at Value St0 (/home/silicon/HDL/LastDayPractice/mod13.v:6)
+#       Signal: /mod13/ms3/n2 @ sub-iteration 2 at Value St0 (/home/silicon/HDL/LastDayPractice/JK_flip_flop.v:4)
+#       Signal: /mod13/ms3/n3 @ sub-iteration 2 at Value St0 (/home/silicon/HDL/LastDayPractice/JK_flip_flop.v:4)
+#       Signal: /mod13/ms3/n6 @ sub-iteration 2 at Value St0 (/home/silicon/HDL/LastDayPractice/JK_flip_flop.v:4)
+#       Signal: /mod13/q @ sub-iteration 2 at Value St0 (/home/silicon/HDL/LastDayPractice/mod13.v:4)
+#       Signal: /mod13/ms3/n1 @ sub-iteration 2 at Value St0 (/home/silicon/HDL/LastDayPractice/JK_flip_flop.v:4)
+#       Signal: /mod13/ms3/n4 @ sub-iteration 2 at Value St0 (/home/silicon/HDL/LastDayPractice/JK_flip_flop.v:4)
+#       Signal: /mod13/ms3/n5 @ sub-iteration 2 at Value St0 (/home/silicon/HDL/LastDayPractice/JK_flip_flop.v:4)
+#       Signal: /mod13/ms3/ct @ sub-iteration 2 at Value St0 (/home/silicon/HDL/LastDayPractice/JK_flip_flop.v:4)
+#       Signal: /mod13/qb @ sub-iteration 2 at Value St0 (/home/silicon/HDL/LastDayPractice/mod13.v:6)
+#       Signal: /mod13/ms2/n5 @ sub-iteration 2 at Value St0 (/home/silicon/HDL/LastDayPractice/JK_flip_flop.v:4)
+#       Signal: /mod13/ms2/n4 @ sub-iteration 2 at Value St0 (/home/silicon/HDL/LastDayPractice/JK_flip_flop.v:4)
+#       Signal: /mod13/q @ sub-iteration 2 at Value St0 (/home/silicon/HDL/LastDayPractice/mod13.v:4)
+#       Signal: /mod13/ms2/n6 @ sub-iteration 2 at Value St0 (/home/silicon/HDL/LastDayPractice/JK_flip_flop.v:4)
+#       Signal: /mod13/ms2/n3 @ sub-iteration 2 at Value St0 (/home/silicon/HDL/LastDayPractice/JK_flip_flop.v:4)
+#   Active process: /mod13/ms2/#NAND#8 @ sub-iteration 3
+#     Source: /home/silicon/HDL/LastDayPractice/JK_flip_flop.v:8
+################# END OF LOOP #################
+# ** Error (suppressible): (vsim-3601) Iteration limit 5000 reached at time 1350 ps.
+run
+# ** Error (suppressible): (vsim-3601) Iteration limit 5000 reached at time 1350 ps.
+run
+# ** Error (suppressible): (vsim-3601) Iteration limit 5000 reached at time 1350 ps.
+run
+# ** Error (suppressible): (vsim-3601) Iteration limit 5000 reached at time 1350 ps.
+run
+# ** Error (suppressible): (vsim-3601) Iteration limit 5000 reached at time 1350 ps.
+run
+# ** Error (suppressible): (vsim-3601) Iteration limit 5000 reached at time 1350 ps.
+quit -sim
+# End time: 20:37:11 on Aug 26,2023, Elapsed time: 0:18:35
+# Errors: 6, Warnings: 4
+# Compile of mod13.v was successful.
+vsim work.mod13
+# vsim work.mod13 
+# Start time: 20:41:59 on Aug 26,2023
+# Loading work.mod13
+# Loading work.master_slave
+add wave -position insertpoint  \
+sim:/mod13/clk \
+sim:/mod13/clr \
+sim:/mod13/q
+force -freeze sim:/mod13/clk 1 0, 0 {50 ps} -r 100
+force -freeze sim:/mod13/clr 0 0
+run
+noforce sim:/mod13/clr
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+#############  Autofindloop Analysis  ###############
+#############  Loop found at time 1350 ps ###############
+#       Signal: /mod13/qb @ sub-iteration 0 at Value St0 (/home/silicon/HDL/LastDayPractice/mod13.v:6)
+#       Signal: /mod13/ms4/n2 @ sub-iteration 0 at Value St0 (/home/silicon/HDL/LastDayPractice/JK_flip_flop.v:4)
+#       Signal: /mod13/ms4/n3 @ sub-iteration 0 at Value St0 (/home/silicon/HDL/LastDayPractice/JK_flip_flop.v:4)
+#       Signal: /mod13/ms4/n6 @ sub-iteration 0 at Value St0 (/home/silicon/HDL/LastDayPractice/JK_flip_flop.v:4)
+#       Signal: /mod13/q @ sub-iteration 0 at Value St0 (/home/silicon/HDL/LastDayPractice/mod13.v:4)
+#       Signal: /mod13/ms4/n1 @ sub-iteration 0 at Value St0 (/home/silicon/HDL/LastDayPractice/JK_flip_flop.v:4)
+#       Signal: /mod13/ms4/n4 @ sub-iteration 0 at Value St0 (/home/silicon/HDL/LastDayPractice/JK_flip_flop.v:4)
+#       Signal: /mod13/ms4/n5 @ sub-iteration 0 at Value St0 (/home/silicon/HDL/LastDayPractice/JK_flip_flop.v:4)
+#       Signal: /mod13/ms4/ct @ sub-iteration 0 at Value St0 (/home/silicon/HDL/LastDayPractice/JK_flip_flop.v:4)
+#       Signal: /mod13/qb @ sub-iteration 0 at Value St0 (/home/silicon/HDL/LastDayPractice/mod13.v:6)
+#       Signal: /mod13/ms3/n2 @ sub-iteration 0 at Value St0 (/home/silicon/HDL/LastDayPractice/JK_flip_flop.v:4)
+#       Signal: /mod13/ms3/n3 @ sub-iteration 0 at Value St0 (/home/silicon/HDL/LastDayPractice/JK_flip_flop.v:4)
+#       Signal: /mod13/ms3/n6 @ sub-iteration 0 at Value St0 (/home/silicon/HDL/LastDayPractice/JK_flip_flop.v:4)
+#       Signal: /mod13/q @ sub-iteration 0 at Value St0 (/home/silicon/HDL/LastDayPractice/mod13.v:4)
+#       Signal: /mod13/ms3/n1 @ sub-iteration 0 at Value St0 (/home/silicon/HDL/LastDayPractice/JK_flip_flop.v:4)
+#       Signal: /mod13/ms3/n4 @ sub-iteration 0 at Value St0 (/home/silicon/HDL/LastDayPractice/JK_flip_flop.v:4)
+#       Signal: /mod13/ms3/n5 @ sub-iteration 0 at Value St0 (/home/silicon/HDL/LastDayPractice/JK_flip_flop.v:4)
+#       Signal: /mod13/w @ sub-iteration 0 at Value St1 (/home/silicon/HDL/LastDayPractice/mod13.v:13)
+#       Signal: /mod13/ms3/ct @ sub-iteration 0 at Value St0 (/home/silicon/HDL/LastDayPractice/JK_flip_flop.v:4)
+#       Signal: /mod13/qb @ sub-iteration 0 at Value St0 (/home/silicon/HDL/LastDayPractice/mod13.v:6)
+#       Signal: /mod13/ms2/n5 @ sub-iteration 0 at Value St0 (/home/silicon/HDL/LastDayPractice/JK_flip_flop.v:4)
+#       Signal: /mod13/ms2/n4 @ sub-iteration 0 at Value St0 (/home/silicon/HDL/LastDayPractice/JK_flip_flop.v:4)
+#       Signal: /mod13/q @ sub-iteration 0 at Value St0 (/home/silicon/HDL/LastDayPractice/mod13.v:4)
+#       Signal: /mod13/ms2/n6 @ sub-iteration 0 at Value St0 (/home/silicon/HDL/LastDayPractice/JK_flip_flop.v:4)
+#       Signal: /mod13/ms2/n3 @ sub-iteration 0 at Value St0 (/home/silicon/HDL/LastDayPractice/JK_flip_flop.v:4)
+#   Active process: /mod13/ms2/#NAND#8 @ sub-iteration 1
+#     Source: /home/silicon/HDL/LastDayPractice/JK_flip_flop.v:8
+#   Active process: /mod13/ms2/#NAND#12 @ sub-iteration 1
+#     Source: /home/silicon/HDL/LastDayPractice/JK_flip_flop.v:12
+#   Active process: /mod13/ms2/#NAND#6 @ sub-iteration 1
+#     Source: /home/silicon/HDL/LastDayPractice/JK_flip_flop.v:6
+#   Active process: /mod13/ms2/#NAND#15 @ sub-iteration 1
+#     Source: /home/silicon/HDL/LastDayPractice/JK_flip_flop.v:15
+#   Active process: /mod13/ms3/#NOT#10 @ sub-iteration 1
+#     Source: /home/silicon/HDL/LastDayPractice/JK_flip_flop.v:10
+#   Active process: /mod13/#OR#13 @ sub-iteration 1
+#     Source: /home/silicon/HDL/LastDayPractice/mod13.v:13
+#   Active process: /mod13/ms2/#NAND#7 @ sub-iteration 1
+#     Source: /home/silicon/HDL/LastDayPractice/JK_flip_flop.v:7
+#   Active process: /mod13/ms2/#NAND#13 @ sub-iteration 1
+#     Source: /home/silicon/HDL/LastDayPractice/JK_flip_flop.v:13
+#   Active process: /mod13/ms2/#NAND#5 @ sub-iteration 1
+#     Source: /home/silicon/HDL/LastDayPractice/JK_flip_flop.v:5
+#   Active process: /mod13/ms2/#NAND#14 @ sub-iteration 1
+#     Source: /home/silicon/HDL/LastDayPractice/JK_flip_flop.v:14
+#   Active process: /mod13/ms3/#NAND#13 @ sub-iteration 1
+#     Source: /home/silicon/HDL/LastDayPractice/JK_flip_flop.v:13
+#   Active process: /mod13/ms3/#NAND#7 @ sub-iteration 1
+#     Source: /home/silicon/HDL/LastDayPractice/JK_flip_flop.v:7
+#   Active process: /mod13/ms3/#NAND#6 @ sub-iteration 1
+#     Source: /home/silicon/HDL/LastDayPractice/JK_flip_flop.v:6
+#   Active process: /mod13/ms4/#NOT#10 @ sub-iteration 1
+#     Source: /home/silicon/HDL/LastDayPractice/JK_flip_flop.v:10
+#   Active process: /mod13/ms3/#NAND#15 @ sub-iteration 1
+#     Source: /home/silicon/HDL/LastDayPractice/JK_flip_flop.v:15
+#   Active process: /mod13/ms3/#NAND#12 @ sub-iteration 1
+#     Source: /home/silicon/HDL/LastDayPractice/JK_flip_flop.v:12
+#   Active process: /mod13/ms3/#NAND#8 @ sub-iteration 1
+#     Source: /home/silicon/HDL/LastDayPractice/JK_flip_flop.v:8
+#   Active process: /mod13/ms3/#NAND#5 @ sub-iteration 1
+#     Source: /home/silicon/HDL/LastDayPractice/JK_flip_flop.v:5
+#   Active process: /mod13/ms3/#NAND#14 @ sub-iteration 1
+#     Source: /home/silicon/HDL/LastDayPractice/JK_flip_flop.v:14
+#   Active process: /mod13/ms4/#NAND#13 @ sub-iteration 1
+#     Source: /home/silicon/HDL/LastDayPractice/JK_flip_flop.v:13
+#   Active process: /mod13/ms4/#NAND#7 @ sub-iteration 1
+#     Source: /home/silicon/HDL/LastDayPractice/JK_flip_flop.v:7
+#   Active process: /mod13/ms4/#NAND#6 @ sub-iteration 1
+#     Source: /home/silicon/HDL/LastDayPractice/JK_flip_flop.v:6
+#   Active process: /mod13/#NAND#14 @ sub-iteration 1
+#     Source: /home/silicon/HDL/LastDayPractice/mod13.v:14
+#   Active process: /mod13/ms4/#NAND#15 @ sub-iteration 1
+#     Source: /home/silicon/HDL/LastDayPractice/JK_flip_flop.v:15
+#   Active process: /mod13/ms4/#NAND#12 @ sub-iteration 1
+#     Source: /home/silicon/HDL/LastDayPractice/JK_flip_flop.v:12
+#   Active process: /mod13/ms4/#NAND#8 @ sub-iteration 1
+#     Source: /home/silicon/HDL/LastDayPractice/JK_flip_flop.v:8
+#   Active process: /mod13/ms4/#NAND#5 @ sub-iteration 1
+#     Source: /home/silicon/HDL/LastDayPractice/JK_flip_flop.v:5
+#   Active process: /mod13/ms4/#NAND#14 @ sub-iteration 1
+#     Source: /home/silicon/HDL/LastDayPractice/JK_flip_flop.v:14
+#       Signal: /mod13/q @ sub-iteration 2 at Value St1 (/home/silicon/HDL/LastDayPractice/mod13.v:4)
+#       Signal: /mod13/ms4/n1 @ sub-iteration 2 at Value St1 (/home/silicon/HDL/LastDayPractice/JK_flip_flop.v:4)
+#       Signal: /mod13/ms4/n4 @ sub-iteration 2 at Value St1 (/home/silicon/HDL/LastDayPractice/JK_flip_flop.v:4)
+#       Signal: /mod13/ms4/n5 @ sub-iteration 2 at Value St1 (/home/silicon/HDL/LastDayPractice/JK_flip_flop.v:4)
+#       Signal: /mod13/qb @ sub-iteration 2 at Value St1 (/home/silicon/HDL/LastDayPractice/mod13.v:6)
+#       Signal: /mod13/ms4/n2 @ sub-iteration 2 at Value St1 (/home/silicon/HDL/LastDayPractice/JK_flip_flop.v:4)
+#       Signal: /mod13/ms4/n3 @ sub-iteration 2 at Value St1 (/home/silicon/HDL/LastDayPractice/JK_flip_flop.v:4)
+#       Signal: /mod13/ms4/n6 @ sub-iteration 2 at Value St1 (/home/silicon/HDL/LastDayPractice/JK_flip_flop.v:4)
+#       Signal: /mod13/q @ sub-iteration 2 at Value St1 (/home/silicon/HDL/LastDayPractice/mod13.v:4)
+#       Signal: /mod13/ms3/n1 @ sub-iteration 2 at Value St1 (/home/silicon/HDL/LastDayPractice/JK_flip_flop.v:4)
+#       Signal: /mod13/ms3/n4 @ sub-iteration 2 at Value St1 (/home/silicon/HDL/LastDayPractice/JK_flip_flop.v:4)
+#       Signal: /mod13/ms3/n5 @ sub-iteration 2 at Value St1 (/home/silicon/HDL/LastDayPractice/JK_flip_flop.v:4)
+#       Signal: /mod13/qb @ sub-iteration 2 at Value St1 (/home/silicon/HDL/LastDayPractice/mod13.v:6)
+#       Signal: /mod13/ms4/ct @ sub-iteration 2 at Value St1 (/home/silicon/HDL/LastDayPractice/JK_flip_flop.v:4)
+#       Signal: /mod13/ms3/n2 @ sub-iteration 2 at Value St1 (/home/silicon/HDL/LastDayPractice/JK_flip_flop.v:4)
+#       Signal: /mod13/ms3/n3 @ sub-iteration 2 at Value St1 (/home/silicon/HDL/LastDayPractice/JK_flip_flop.v:4)
+#       Signal: /mod13/ms3/n6 @ sub-iteration 2 at Value St1 (/home/silicon/HDL/LastDayPractice/JK_flip_flop.v:4)
+#       Signal: /mod13/q @ sub-iteration 2 at Value St1 (/home/silicon/HDL/LastDayPractice/mod13.v:4)
+#       Signal: /mod13/ms2/n6 @ sub-iteration 2 at Value St1 (/home/silicon/HDL/LastDayPractice/JK_flip_flop.v:4)
+#       Signal: /mod13/ms2/n3 @ sub-iteration 2 at Value St1 (/home/silicon/HDL/LastDayPractice/JK_flip_flop.v:4)
+#       Signal: /mod13/w @ sub-iteration 2 at Value St0 (/home/silicon/HDL/LastDayPractice/mod13.v:13)
+#       Signal: /mod13/ms3/ct @ sub-iteration 2 at Value St1 (/home/silicon/HDL/LastDayPractice/JK_flip_flop.v:4)
+#       Signal: /mod13/qb @ sub-iteration 2 at Value St1 (/home/silicon/HDL/LastDayPractice/mod13.v:6)
+#       Signal: /mod13/ms2/n5 @ sub-iteration 2 at Value St1 (/home/silicon/HDL/LastDayPractice/JK_flip_flop.v:4)
+#       Signal: /mod13/ms2/n4 @ sub-iteration 2 at Value St1 (/home/silicon/HDL/LastDayPractice/JK_flip_flop.v:4)
+#   Active process: /mod13/ms2/#NAND#7 @ sub-iteration 3
+#     Source: /home/silicon/HDL/LastDayPractice/JK_flip_flop.v:7
+################# END OF LOOP #################
+# ** Error (suppressible): (vsim-3601) Iteration limit 5000 reached at time 1350 ps.
+run
+# ** Error (suppressible): (vsim-3601) Iteration limit 5000 reached at time 1350 ps.
+quit -sim
+# End time: 20:45:59 on Aug 26,2023, Elapsed time: 0:04:00
+# Errors: 2, Warnings: 2
+# Compile of MOD10.v was successful.
+# Compile of mod13.v was successful.
+# Compile of mod13.v was successful.
+vsim work.mod13
+# vsim work.mod13 
+# Start time: 20:46:45 on Aug 26,2023
+# Loading work.mod13
+# Loading work.master_slave
+add wave -position insertpoint  \
+sim:/mod13/clk \
+sim:/mod13/clr \
+sim:/mod13/q
+force -freeze sim:/mod13/clk 1 0, 0 {50 ps} -r 100
+force -freeze sim:/mod13/clr 0 0
+run
+force -freeze sim:/mod13/clr St1 0
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+noforce sim:/mod13/clr
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+#############  Autofindloop Analysis  ###############
+#############  Loop found at time 2850 ps ###############
+#       Signal: /mod13/q @ sub-iteration 0 at Value St1 (/home/silicon/HDL/LastDayPractice/mod13.v:4)
+#       Signal: /mod13/ms4/n6 @ sub-iteration 0 at Value St1 (/home/silicon/HDL/LastDayPractice/JK_flip_flop.v:4)
+#       Signal: /mod13/ms4/n3 @ sub-iteration 0 at Value St1 (/home/silicon/HDL/LastDayPractice/JK_flip_flop.v:4)
+#       Signal: /mod13/qb @ sub-iteration 0 at Value St1 (/home/silicon/HDL/LastDayPractice/mod13.v:6)
+#       Signal: /mod13/ms4/n5 @ sub-iteration 0 at Value St1 (/home/silicon/HDL/LastDayPractice/JK_flip_flop.v:4)
+#       Signal: /mod13/ms4/n4 @ sub-iteration 0 at Value St1 (/home/silicon/HDL/LastDayPractice/JK_flip_flop.v:4)
+#   Active process: /mod13/ms4/#NAND#7 @ sub-iteration 1
+#     Source: /home/silicon/HDL/LastDayPractice/JK_flip_flop.v:7
+#   Active process: /mod13/ms4/#NAND#13 @ sub-iteration 1
+#     Source: /home/silicon/HDL/LastDayPractice/JK_flip_flop.v:13
+#   Active process: /mod13/ms4/#NAND#5 @ sub-iteration 1
+#     Source: /home/silicon/HDL/LastDayPractice/JK_flip_flop.v:5
+#   Active process: /mod13/ms4/#NAND#14 @ sub-iteration 1
+#     Source: /home/silicon/HDL/LastDayPractice/JK_flip_flop.v:14
+#   Active process: /mod13/ms4/#NAND#8 @ sub-iteration 1
+#     Source: /home/silicon/HDL/LastDayPractice/JK_flip_flop.v:8
+#   Active process: /mod13/ms4/#NAND#12 @ sub-iteration 1
+#     Source: /home/silicon/HDL/LastDayPractice/JK_flip_flop.v:12
+#   Active process: /mod13/ms4/#NAND#6 @ sub-iteration 1
+#     Source: /home/silicon/HDL/LastDayPractice/JK_flip_flop.v:6
+#   Active process: /mod13/ms4/#NAND#15 @ sub-iteration 1
+#     Source: /home/silicon/HDL/LastDayPractice/JK_flip_flop.v:15
+#   Active process: /mod13/#NAND#14 @ sub-iteration 1
+#     Source: /home/silicon/HDL/LastDayPractice/mod13.v:14
+#       Signal: /mod13/qb @ sub-iteration 2 at Value St0 (/home/silicon/HDL/LastDayPractice/mod13.v:6)
+#       Signal: /mod13/ms4/n5 @ sub-iteration 2 at Value St0 (/home/silicon/HDL/LastDayPractice/JK_flip_flop.v:4)
+#       Signal: /mod13/ms4/n4 @ sub-iteration 2 at Value St0 (/home/silicon/HDL/LastDayPractice/JK_flip_flop.v:4)
+#       Signal: /mod13/q @ sub-iteration 2 at Value St0 (/home/silicon/HDL/LastDayPractice/mod13.v:4)
+#       Signal: /mod13/ms4/n6 @ sub-iteration 2 at Value St0 (/home/silicon/HDL/LastDayPractice/JK_flip_flop.v:4)
+#       Signal: /mod13/ms4/n3 @ sub-iteration 2 at Value St0 (/home/silicon/HDL/LastDayPractice/JK_flip_flop.v:4)
+#   Active process: /mod13/ms4/#NAND#8 @ sub-iteration 3
+#     Source: /home/silicon/HDL/LastDayPractice/JK_flip_flop.v:8
+################# END OF LOOP #################
+# ** Error (suppressible): (vsim-3601) Iteration limit 5000 reached at time 2850 ps.
+run
+# ** Error (suppressible): (vsim-3601) Iteration limit 5000 reached at time 2850 ps.
+run
+# ** Error (suppressible): (vsim-3601) Iteration limit 5000 reached at time 2850 ps.
+# Compile of mod13.v was successful.
+vsim work.mod13
+# End time: 20:50:59 on Aug 26,2023, Elapsed time: 0:04:14
+# Errors: 3, Warnings: 5
+# vsim work.mod13 
+# Start time: 20:50:59 on Aug 26,2023
+# Loading work.mod13
+# Loading work.master_slave
+add wave -position insertpoint  \
+sim:/mod13/clk \
+sim:/mod13/clr \
+sim:/mod13/q
+force -freeze sim:/mod13/clk 1 0, 0 {50 ps} -r 100
+force -freeze sim:/mod13/clr 0 0
+run
+force -freeze sim:/mod13/clr St0 0
+noforce sim:/mod13/clr
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+#############  Autofindloop Analysis  ###############
+#############  Loop found at time 1250 ps ###############
+#       Signal: /mod13/q @ sub-iteration 0 at Value St1 (/home/silicon/HDL/LastDayPractice/mod13.v:4)
+#       Signal: /mod13/ms4/n6 @ sub-iteration 0 at Value St1 (/home/silicon/HDL/LastDayPractice/JK_flip_flop.v:4)
+#       Signal: /mod13/ms4/n3 @ sub-iteration 0 at Value St1 (/home/silicon/HDL/LastDayPractice/JK_flip_flop.v:4)
+#       Signal: /mod13/qb @ sub-iteration 0 at Value St1 (/home/silicon/HDL/LastDayPractice/mod13.v:6)
+#       Signal: /mod13/ms4/n5 @ sub-iteration 0 at Value St1 (/home/silicon/HDL/LastDayPractice/JK_flip_flop.v:4)
+#       Signal: /mod13/ms4/n4 @ sub-iteration 0 at Value St1 (/home/silicon/HDL/LastDayPractice/JK_flip_flop.v:4)
+#   Active process: /mod13/ms4/#NAND#7 @ sub-iteration 1
+#     Source: /home/silicon/HDL/LastDayPractice/JK_flip_flop.v:7
+#   Active process: /mod13/ms4/#NAND#13 @ sub-iteration 1
+#     Source: /home/silicon/HDL/LastDayPractice/JK_flip_flop.v:13
+#   Active process: /mod13/ms4/#NAND#5 @ sub-iteration 1
+#     Source: /home/silicon/HDL/LastDayPractice/JK_flip_flop.v:5
+#   Active process: /mod13/ms4/#NAND#14 @ sub-iteration 1
+#     Source: /home/silicon/HDL/LastDayPractice/JK_flip_flop.v:14
+#   Active process: /mod13/ms4/#NAND#8 @ sub-iteration 1
+#     Source: /home/silicon/HDL/LastDayPractice/JK_flip_flop.v:8
+#   Active process: /mod13/ms4/#NAND#12 @ sub-iteration 1
+#     Source: /home/silicon/HDL/LastDayPractice/JK_flip_flop.v:12
+#   Active process: /mod13/ms4/#NAND#6 @ sub-iteration 1
+#     Source: /home/silicon/HDL/LastDayPractice/JK_flip_flop.v:6
+#   Active process: /mod13/ms4/#NAND#15 @ sub-iteration 1
+#     Source: /home/silicon/HDL/LastDayPractice/JK_flip_flop.v:15
+#   Active process: /mod13/#NAND#14 @ sub-iteration 1
+#     Source: /home/silicon/HDL/LastDayPractice/mod13.v:14
+#       Signal: /mod13/qb @ sub-iteration 2 at Value St0 (/home/silicon/HDL/LastDayPractice/mod13.v:6)
+#       Signal: /mod13/ms4/n5 @ sub-iteration 2 at Value St0 (/home/silicon/HDL/LastDayPractice/JK_flip_flop.v:4)
+#       Signal: /mod13/ms4/n4 @ sub-iteration 2 at Value St0 (/home/silicon/HDL/LastDayPractice/JK_flip_flop.v:4)
+#       Signal: /mod13/q @ sub-iteration 2 at Value St0 (/home/silicon/HDL/LastDayPractice/mod13.v:4)
+#       Signal: /mod13/ms4/n6 @ sub-iteration 2 at Value St0 (/home/silicon/HDL/LastDayPractice/JK_flip_flop.v:4)
+#       Signal: /mod13/ms4/n3 @ sub-iteration 2 at Value St0 (/home/silicon/HDL/LastDayPractice/JK_flip_flop.v:4)
+#   Active process: /mod13/ms4/#NAND#8 @ sub-iteration 3
+#     Source: /home/silicon/HDL/LastDayPractice/JK_flip_flop.v:8
+################# END OF LOOP #################
+# ** Error (suppressible): (vsim-3601) Iteration limit 5000 reached at time 1250 ps.
+run
+# ** Error (suppressible): (vsim-3601) Iteration limit 5000 reached at time 1250 ps.
+quit -sim
+# End time: 20:52:17 on Aug 26,2023, Elapsed time: 0:01:18
+# Errors: 2, Warnings: 1
+vsim work.mod10
+# vsim work.mod10 
+# Start time: 20:52:26 on Aug 26,2023
+# Loading work.mod10
+# Loading work.master_slave
+add wave -position insertpoint  \
+sim:/mod10/clr \
+sim:/mod10/clk \
+sim:/mod10/q
+add wave -position insertpoint  \
+sim:/mod10/qb
+run
+force -freeze sim:/mod10/clr 0 0
+force -freeze sim:/mod10/clk 1 0, 0 {50 ps} -r 100
+run
+run
+run
+run
+noforce sim:/mod10/clk
+run
+run
+restart -f
+force -freeze sim:/mod10/clr 0 0
+force -freeze sim:/mod10/clk 0 0
+run
+noforce sim:/mod10/clr
+run
+run
+noforce sim:/mod10/clr
+run
+force -freeze sim:/mod10/clr St0 0
+run
+run
+run
+run
+run
+run
+run
+restart -f
+force -freeze sim:/mod10/clr 0 0
+force -freeze sim:/mod10/clk 1 0, 0 {50 ps} -r 100
+run
+force -freeze sim:/mod10/clr St1 0
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
 run
 quit -sim
-# End time: 18:05:15 on Aug 23,2023, Elapsed time: 0:01:25
-# Errors: 0, Warnings: 4
-# Compile of FourBit_Adder_subtractor.v was successful.
-vsim work.TB_AS
-# vsim work.TB_AS 
-# Start time: 18:17:03 on Aug 23,2023
-# Loading work.TB_AS
-# Loading work.Adder_Subtractor
-# Loading work.full_adder
-add wave -position insertpoint  \
-sim:/TB_AS/a \
-sim:/TB_AS/b \
-sim:/TB_AS/cin \
-sim:/TB_AS/s \
-sim:/TB_AS/cout
-run
-run
-run
-run
-run
-run
-quit -sim
-# End time: 18:26:52 on Aug 23,2023, Elapsed time: 0:09:49
-# Errors: 0, Warnings: 4
-# Compile of FourBit_Adder_subtractor.v was successful.
-# Compile of FourBit_Adder_subtractor.v was successful.
-vsim work.TB_AS
-# vsim work.TB_AS 
-# Start time: 18:33:30 on Aug 23,2023
-# Loading work.TB_AS
-# Loading work.Adder_Subtractor
-# Loading work.full_adder
-add wave -position insertpoint  \
-sim:/TB_AS/a \
-sim:/TB_AS/b \
-sim:/TB_AS/cin \
-sim:/TB_AS/s \
-sim:/TB_AS/cout
-run
-run
-run
-run
-run
-run
-run
-quit -sim
-# End time: 18:33:59 on Aug 23,2023, Elapsed time: 0:00:29
-# Errors: 0, Warnings: 3
-# Compile of Bcd_Adder.v was successful.
-# Compile of Bcd_Adder.v was successful.
-vsim work.TB_BA
-# vsim work.TB_BA 
-# Start time: 18:56:45 on Aug 23,2023
-# Loading work.TB_BA
-# Loading work.Bcd_Adder
-# Loading work.Adder_Subtractor
-# Loading work.full_adder
-add wave -position insertpoint  \
-sim:/TB_BA/a \
-sim:/TB_BA/b \
-sim:/TB_BA/s \
-sim:/TB_BA/cin \
-sim:/TB_BA/cout
-run
-run
-add wave -position insertpoint  \
-sim:/TB_BA/cout
-add wave -position insertpoint  \
-sim:/TB_BA/a
-add wave -position insertpoint  \
-sim:/TB_BA/b
-add wave -position insertpoint  \
-sim:/TB_BA/s
-add wave -position insertpoint  \
-sim:/TB_BA/cout
-run
-run
-run
-run
-run
-quit -sim
-# End time: 18:58:25 on Aug 23,2023, Elapsed time: 0:01:40
-# Errors: 0, Warnings: 4
-# Compile of Bcd_Adder.v was successful.
-# Compile of JK_flip_flop.v was successful.
+# End time: 20:56:15 on Aug 26,2023, Elapsed time: 0:03:49
+# Errors: 0, Warnings: 1
+# Compile of MOD10.v was successful.
 vsim work.master_slave
 # vsim work.master_slave 
-# Start time: 21:33:36 on Aug 23,2023
+# Start time: 21:06:26 on Aug 26,2023
 # Loading work.master_slave
 add wave -position insertpoint  \
 sim:/master_slave/j \
 sim:/master_slave/k \
 sim:/master_slave/clk \
 sim:/master_slave/clr \
-sim:/master_slave/q
+sim:/master_slave/q \
+sim:/master_slave/qb
+force -freeze sim:/master_slave/j 0 0
+force -freeze sim:/master_slave/k 0 0
+force -freeze sim:/master_slave/clk 1 0, 0 {50 ps} -r 100
+force -freeze sim:/master_slave/clr 0 0
+run
+force -freeze sim:/master_slave/clr 1 0
+run
+run
+run
+force -freeze sim:/master_slave/j St1 0
+run
+force -freeze sim:/master_slave/j St0 0
+force -freeze sim:/master_slave/k St1 0
+run
+run
+run
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
 force -freeze sim:/master_slave/j 1 0
 force -freeze sim:/master_slave/k 1 0
 force -freeze sim:/master_slave/clk 1 0, 0 {50 ps} -r 100
@@ -129,50 +554,23 @@ run
 run
 run
 quit -sim
-# End time: 21:35:10 on Aug 23,2023, Elapsed time: 0:01:34
-# Errors: 0, Warnings: 4
-# Compile of MOD10.v failed with 1 errors.
-# Compile of MOD10.v failed with 1 errors.
+# End time: 21:17:56 on Aug 26,2023, Elapsed time: 0:11:30
+# Errors: 0, Warnings: 1
+# Compile of MOD10.v was successful.
 # Compile of MOD10.v was successful.
 vsim work.mod10
 # vsim work.mod10 
-# Start time: 21:50:28 on Aug 23,2023
+# Start time: 21:20:25 on Aug 26,2023
 # Loading work.mod10
 # Loading work.master_slave
 add wave -position insertpoint  \
-sim:/mod10/clk \
+sim:/mod10/clk
+add wave -position insertpoint  \
 sim:/mod10/q
 add wave -position insertpoint  \
 sim:/mod10/clr
-force -freeze sim:/mod10/clr 0 0
 force -freeze sim:/mod10/clk 1 0, 0 {50 ps} -r 100
-run
-noforce sim:/mod10/clr
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-quit -sim
-# End time: 21:51:35 on Aug 23,2023, Elapsed time: 0:01:07
-# Errors: 0, Warnings: 5
-# Compile of MOD10.v was successful.
-vsim work.mod10
-# vsim work.mod10 
-# Start time: 21:52:02 on Aug 23,2023
-# Loading work.mod10
-# Loading work.master_slave
-add wave -position insertpoint  \
-sim:/mod10/clr \
-sim:/mod10/clk \
-sim:/mod10/q
 force -freeze sim:/mod10/clr 0 0
-force -freeze sim:/mod10/clk 1 0, 0 {50 ps} -r 100
 run
 force -freeze sim:/mod10/clr St1 0
 run
@@ -183,21 +581,14 @@ run
 run
 run
 run
-quit -sim
-# End time: 21:53:19 on Aug 23,2023, Elapsed time: 0:01:17
-# Errors: 0, Warnings: 2
-vsim work.mod10
-# vsim work.mod10 
-# Start time: 21:53:33 on Aug 23,2023
-# Loading work.mod10
-# Loading work.master_slave
-add wave -position insertpoint  \
-sim:/mod10/clr \
-sim:/mod10/clk \
-sim:/mod10/q
-force -freeze sim:/mod10/clr 0 0
-noforce sim:/mod10/clk
-force -freeze sim:/mod10/clk 1 0, 0 {50 ps} -r 100
+run
+run
+run
+run
+run
+run
+run
+run
 run
 noforce sim:/mod10/clr
 run
@@ -211,34 +602,56 @@ run
 run
 run
 run
-quit -sim
-# End time: 21:54:48 on Aug 23,2023, Elapsed time: 0:01:15
-# Errors: 0, Warnings: 1
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+add wave -position insertpoint  \
+sim:/mod10/qb
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
 # Compile of MOD10.v was successful.
-vsim work.mod10
-# vsim work.mod10 
-# Start time: 21:54:58 on Aug 23,2023
-# Loading work.mod10
-# Loading work.master_slave
 quit -sim
-# End time: 21:55:36 on Aug 23,2023, Elapsed time: 0:00:38
-# Errors: 0, Warnings: 2
-# Compile of JK_flip_flop.v was successful.
-# Compile of JK_flip_flop.v was successful.
-# Compile of MOD10.v was successful.
-vsim work.mod10
-# vsim work.mod10 
-# Start time: 21:56:03 on Aug 23,2023
-# Loading work.mod10
+# End time: 21:23:07 on Aug 26,2023, Elapsed time: 0:02:42
+# Errors: 0, Warnings: 4
+# Compile of mod13.v was successful.
+# Compile of mod13.v was successful.
+# Compile of mod13.v was successful.
+vsim work.mod13
+# vsim work.mod13 
+# Start time: 21:23:34 on Aug 26,2023
+# Loading work.mod13
 # Loading work.master_slave
 add wave -position insertpoint  \
-sim:/mod10/clr \
-sim:/mod10/clk \
-sim:/mod10/q
-force -freeze sim:/mod10/clr 0 0
-force -freeze sim:/mod10/clk 1 0, 0 {50 ps} -r 100
+sim:/mod13/clk \
+sim:/mod13/clr \
+sim:/mod13/q
+force -freeze sim:/mod13/clk 1 0, 0 {50 ps} -r 100
+force -freeze sim:/mod13/clr 0 0
 run
-noforce sim:/mod10/clr
+noforce sim:/mod13/clr
 run
 run
 run
@@ -253,119 +666,106 @@ run
 run
 #############  Autofindloop Analysis  ###############
 #############  Loop found at time 1250 ps ###############
-#       Signal: /mod10/q @ sub-iteration 0 at Value St1 (/home/silicon/HDL/LastDayPractice/MOD10.v:4)
-#       Signal: /mod10/ms4/n6 @ sub-iteration 0 at Value St1 (/home/silicon/HDL/LastDayPractice/JK_flip_flop.v:4)
-#       Signal: /mod10/ms4/n3 @ sub-iteration 0 at Value St1 (/home/silicon/HDL/LastDayPractice/JK_flip_flop.v:4)
-#       Signal: /mod10/qb @ sub-iteration 0 at Value St1 (/home/silicon/HDL/LastDayPractice/MOD10.v:6)
-#       Signal: /mod10/ms4/n5 @ sub-iteration 0 at Value St1 (/home/silicon/HDL/LastDayPractice/JK_flip_flop.v:4)
-#       Signal: /mod10/ms4/n4 @ sub-iteration 0 at Value St1 (/home/silicon/HDL/LastDayPractice/JK_flip_flop.v:4)
-#   Active process: /mod10/ms4/#NAND#7 @ sub-iteration 1
+#       Signal: /mod13/q @ sub-iteration 0 at Value St1 (/home/silicon/HDL/LastDayPractice/mod13.v:4)
+#       Signal: /mod13/ms4/n6 @ sub-iteration 0 at Value St1 (/home/silicon/HDL/LastDayPractice/JK_flip_flop.v:4)
+#       Signal: /mod13/ms4/n3 @ sub-iteration 0 at Value St1 (/home/silicon/HDL/LastDayPractice/JK_flip_flop.v:4)
+#       Signal: /mod13/qb @ sub-iteration 0 at Value St1 (/home/silicon/HDL/LastDayPractice/mod13.v:6)
+#       Signal: /mod13/ms4/n5 @ sub-iteration 0 at Value St1 (/home/silicon/HDL/LastDayPractice/JK_flip_flop.v:4)
+#       Signal: /mod13/ms4/n4 @ sub-iteration 0 at Value St1 (/home/silicon/HDL/LastDayPractice/JK_flip_flop.v:4)
+#   Active process: /mod13/ms4/#NAND#7 @ sub-iteration 1
 #     Source: /home/silicon/HDL/LastDayPractice/JK_flip_flop.v:7
-#   Active process: /mod10/ms4/#NAND#13 @ sub-iteration 1
+#   Active process: /mod13/ms4/#NAND#13 @ sub-iteration 1
 #     Source: /home/silicon/HDL/LastDayPractice/JK_flip_flop.v:13
-#   Active process: /mod10/ms4/#NAND#5 @ sub-iteration 1
+#   Active process: /mod13/ms4/#NAND#5 @ sub-iteration 1
 #     Source: /home/silicon/HDL/LastDayPractice/JK_flip_flop.v:5
-#   Active process: /mod10/ms4/#NAND#14 @ sub-iteration 1
+#   Active process: /mod13/ms4/#NAND#14 @ sub-iteration 1
 #     Source: /home/silicon/HDL/LastDayPractice/JK_flip_flop.v:14
-#   Active process: /mod10/ms4/#NAND#8 @ sub-iteration 1
+#   Active process: /mod13/ms4/#NAND#8 @ sub-iteration 1
 #     Source: /home/silicon/HDL/LastDayPractice/JK_flip_flop.v:8
-#   Active process: /mod10/ms4/#NAND#12 @ sub-iteration 1
+#   Active process: /mod13/ms4/#NAND#12 @ sub-iteration 1
 #     Source: /home/silicon/HDL/LastDayPractice/JK_flip_flop.v:12
-#   Active process: /mod10/ms4/#NAND#6 @ sub-iteration 1
+#   Active process: /mod13/#NAND#7 @ sub-iteration 1
+#     Source: /home/silicon/HDL/LastDayPractice/mod13.v:7
+#   Active process: /mod13/ms4/#NAND#6 @ sub-iteration 1
 #     Source: /home/silicon/HDL/LastDayPractice/JK_flip_flop.v:6
-#   Active process: /mod10/ms4/#NAND#15 @ sub-iteration 1
+#   Active process: /mod13/ms4/#NAND#15 @ sub-iteration 1
 #     Source: /home/silicon/HDL/LastDayPractice/JK_flip_flop.v:15
-#   Active process: /mod10/#NAND#12 @ sub-iteration 1
-#     Source: /home/silicon/HDL/LastDayPractice/MOD10.v:12
-#       Signal: /mod10/qb @ sub-iteration 2 at Value St0 (/home/silicon/HDL/LastDayPractice/MOD10.v:6)
-#       Signal: /mod10/ms4/n5 @ sub-iteration 2 at Value St0 (/home/silicon/HDL/LastDayPractice/JK_flip_flop.v:4)
-#       Signal: /mod10/ms4/n4 @ sub-iteration 2 at Value St0 (/home/silicon/HDL/LastDayPractice/JK_flip_flop.v:4)
-#       Signal: /mod10/q @ sub-iteration 2 at Value St0 (/home/silicon/HDL/LastDayPractice/MOD10.v:4)
-#       Signal: /mod10/ms4/n6 @ sub-iteration 2 at Value St0 (/home/silicon/HDL/LastDayPractice/JK_flip_flop.v:4)
-#       Signal: /mod10/ms4/n3 @ sub-iteration 2 at Value St0 (/home/silicon/HDL/LastDayPractice/JK_flip_flop.v:4)
-#   Active process: /mod10/ms4/#NAND#8 @ sub-iteration 3
+#       Signal: /mod13/qb @ sub-iteration 2 at Value St0 (/home/silicon/HDL/LastDayPractice/mod13.v:6)
+#       Signal: /mod13/ms4/n5 @ sub-iteration 2 at Value St0 (/home/silicon/HDL/LastDayPractice/JK_flip_flop.v:4)
+#       Signal: /mod13/ms4/n4 @ sub-iteration 2 at Value St0 (/home/silicon/HDL/LastDayPractice/JK_flip_flop.v:4)
+#       Signal: /mod13/q @ sub-iteration 2 at Value St0 (/home/silicon/HDL/LastDayPractice/mod13.v:4)
+#       Signal: /mod13/ms4/n6 @ sub-iteration 2 at Value St0 (/home/silicon/HDL/LastDayPractice/JK_flip_flop.v:4)
+#       Signal: /mod13/ms4/n3 @ sub-iteration 2 at Value St0 (/home/silicon/HDL/LastDayPractice/JK_flip_flop.v:4)
+#   Active process: /mod13/ms4/#NAND#8 @ sub-iteration 3
 #     Source: /home/silicon/HDL/LastDayPractice/JK_flip_flop.v:8
 ################# END OF LOOP #################
 # ** Error (suppressible): (vsim-3601) Iteration limit 5000 reached at time 1250 ps.
 run
 # ** Error (suppressible): (vsim-3601) Iteration limit 5000 reached at time 1250 ps.
-run
-# ** Error (suppressible): (vsim-3601) Iteration limit 5000 reached at time 1250 ps.
-run
-# ** Error (suppressible): (vsim-3601) Iteration limit 5000 reached at time 1250 ps.
-run
-# ** Error (suppressible): (vsim-3601) Iteration limit 5000 reached at time 1250 ps.
-run
-# ** Error (suppressible): (vsim-3601) Iteration limit 5000 reached at time 1250 ps.
-run
-# ** Error (suppressible): (vsim-3601) Iteration limit 5000 reached at time 1250 ps.
-run
-# ** Error (suppressible): (vsim-3601) Iteration limit 5000 reached at time 1250 ps.
-run
-# ** Error (suppressible): (vsim-3601) Iteration limit 5000 reached at time 1250 ps.
-run
-# ** Error (suppressible): (vsim-3601) Iteration limit 5000 reached at time 1250 ps.
-run
-# ** Error (suppressible): (vsim-3601) Iteration limit 5000 reached at time 1250 ps.
-run
-# ** Error (suppressible): (vsim-3601) Iteration limit 5000 reached at time 1250 ps.
-run
-# ** Error (suppressible): (vsim-3601) Iteration limit 5000 reached at time 1250 ps.
-run
-# ** Error (suppressible): (vsim-3601) Iteration limit 5000 reached at time 1250 ps.
-force -freeze sim:/mod10/clr 1 0
-run
-# ** Error (suppressible): (vsim-3601) Iteration limit 5000 reached at time 1250 ps.
-run
-# ** Error (suppressible): (vsim-3601) Iteration limit 5000 reached at time 1250 ps.
-force -freeze sim:/mod10/clr 0 0
-run
-# ** Error (suppressible): (vsim-3601) Iteration limit 5000 reached at time 1250 ps.
-run
-# ** Error (suppressible): (vsim-3601) Iteration limit 5000 reached at time 1250 ps.
-restart -f
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-force -freeze sim:/mod10/clr St0 0
-force -freeze sim:/mod10/clk 1 0, 0 {50 ps} -r 100
-run
-force -freeze sim:/mod10/clr St1 0
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
 quit -sim
-# End time: 21:59:14 on Aug 23,2023, Elapsed time: 0:03:11
-# Errors: 0, Warnings: 1
-# Compile of MOD10.v was successful.
-vsim work.mod10
-# vsim work.mod10 
-# Start time: 21:59:26 on Aug 23,2023
-# Loading work.mod10
+# End time: 21:26:42 on Aug 26,2023, Elapsed time: 0:03:08
+# Errors: 2, Warnings: 4
+# Compile of mod13.v was successful.
+# Compile of mod13.v was successful.
+vsim work.mod13
+# vsim work.mod13 
+# Start time: 21:26:54 on Aug 26,2023
+# Loading work.mod13
 # Loading work.master_slave
 add wave -position insertpoint  \
-sim:/mod10/clr \
-sim:/mod10/clk \
-sim:/mod10/q
-force -freeze sim:/mod10/clr 0 0
-force -freeze sim:/mod10/clk 1 0, 0 {50 ps} -r 100
+sim:/mod13/clk \
+sim:/mod13/clr
+add wave -position insertpoint  \
+sim:/mod13/q
+force -freeze sim:/mod13/clk 1 0, 0 {50 ps} -r 100
+force -freeze sim:/mod13/clr 0 0
 run
-force -freeze sim:/mod10/clr St1 0
+noforce sim:/mod13/clr
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
 run
 run
 run
@@ -381,187 +781,29 @@ run
 run
 run
 quit -sim
-# End time: 22:01:57 on Aug 23,2023, Elapsed time: 0:02:31
-# Errors: 0, Warnings: 2
-# Compile of MOD10.v was successful.
-vsim work.mod10
-# vsim work.mod10 
-# Start time: 22:02:15 on Aug 23,2023
-# Loading work.mod10
+# End time: 21:28:44 on Aug 26,2023, Elapsed time: 0:01:50
+# Errors: 0, Warnings: 3
+# Compile of mod13.v failed with 3 errors.
+# Compile of mod13.v failed with 3 errors.
+# Compile of mod13.v failed with 3 errors.
+# Compile of mod13.v failed with 3 errors.
+# Compile of mod13.v failed with 3 errors.
+# Compile of mod13.v was successful.
+vsim work.mod13
+# vsim work.mod13 
+# Start time: 21:30:00 on Aug 26,2023
+# Loading work.mod13
 # Loading work.master_slave
 add wave -position insertpoint  \
-sim:/mod10/clr \
-sim:/mod10/clk \
-sim:/mod10/q
-force -freeze sim:/mod10/clr 0 0
-force -freeze sim:/mod10/clk 1 0, 0 {50 ps} -r 100
-run
-force -freeze sim:/mod10/clr St1 0
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-noforce sim:/mod10/clr
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-quit -sim
-# End time: 22:03:44 on Aug 23,2023, Elapsed time: 0:01:29
-# Errors: 0, Warnings: 2
-# Compile of MOD10.v was successful.
-# Compile of MOD10.v was successful.
-vsim work.mod10
-# vsim work.mod10 
-# Start time: 22:04:26 on Aug 23,2023
-# Loading work.mod10
-# Loading work.master_slave
+sim:/mod13/clk \
+sim:/mod13/clr
 add wave -position insertpoint  \
-sim:/mod10/clr \
-sim:/mod10/clk \
-sim:/mod10/q
-force -freeze sim:/mod10/clr 0 0
-force -freeze sim:/mod10/clk 1 0, 0 {50 ps} -r 100
-run
-noforce sim:/mod10/clr
+sim:/mod13/q
+force -freeze sim:/mod13/clk 1 0, 0 {50 ps} -r 100
+force -freeze sim:/mod13/clr 0 0
 run
 run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-#############  Autofindloop Analysis  ###############
-#############  Loop found at time 1250 ps ###############
-#       Signal: /mod10/q @ sub-iteration 0 at Value St1 (/home/silicon/HDL/LastDayPractice/MOD10.v:4)
-#       Signal: /mod10/ms4/n6 @ sub-iteration 0 at Value St1 (/home/silicon/HDL/LastDayPractice/JK_flip_flop.v:4)
-#       Signal: /mod10/ms4/n3 @ sub-iteration 0 at Value St1 (/home/silicon/HDL/LastDayPractice/JK_flip_flop.v:4)
-#       Signal: /mod10/qb @ sub-iteration 0 at Value St1 (/home/silicon/HDL/LastDayPractice/MOD10.v:6)
-#       Signal: /mod10/ms4/n5 @ sub-iteration 0 at Value St1 (/home/silicon/HDL/LastDayPractice/JK_flip_flop.v:4)
-#       Signal: /mod10/ms4/n4 @ sub-iteration 0 at Value St1 (/home/silicon/HDL/LastDayPractice/JK_flip_flop.v:4)
-#   Active process: /mod10/ms4/#NAND#7 @ sub-iteration 1
-#     Source: /home/silicon/HDL/LastDayPractice/JK_flip_flop.v:7
-#   Active process: /mod10/ms4/#NAND#13 @ sub-iteration 1
-#     Source: /home/silicon/HDL/LastDayPractice/JK_flip_flop.v:13
-#   Active process: /mod10/ms4/#NAND#5 @ sub-iteration 1
-#     Source: /home/silicon/HDL/LastDayPractice/JK_flip_flop.v:5
-#   Active process: /mod10/ms4/#NAND#14 @ sub-iteration 1
-#     Source: /home/silicon/HDL/LastDayPractice/JK_flip_flop.v:14
-#   Active process: /mod10/ms4/#NAND#8 @ sub-iteration 1
-#     Source: /home/silicon/HDL/LastDayPractice/JK_flip_flop.v:8
-#   Active process: /mod10/ms4/#NAND#12 @ sub-iteration 1
-#     Source: /home/silicon/HDL/LastDayPractice/JK_flip_flop.v:12
-#   Active process: /mod10/ms4/#NAND#6 @ sub-iteration 1
-#     Source: /home/silicon/HDL/LastDayPractice/JK_flip_flop.v:6
-#   Active process: /mod10/ms4/#NAND#15 @ sub-iteration 1
-#     Source: /home/silicon/HDL/LastDayPractice/JK_flip_flop.v:15
-#   Active process: /mod10/#NAND#12 @ sub-iteration 1
-#     Source: /home/silicon/HDL/LastDayPractice/MOD10.v:12
-#       Signal: /mod10/qb @ sub-iteration 2 at Value St0 (/home/silicon/HDL/LastDayPractice/MOD10.v:6)
-#       Signal: /mod10/ms4/n5 @ sub-iteration 2 at Value St0 (/home/silicon/HDL/LastDayPractice/JK_flip_flop.v:4)
-#       Signal: /mod10/ms4/n4 @ sub-iteration 2 at Value St0 (/home/silicon/HDL/LastDayPractice/JK_flip_flop.v:4)
-#       Signal: /mod10/q @ sub-iteration 2 at Value St0 (/home/silicon/HDL/LastDayPractice/MOD10.v:4)
-#       Signal: /mod10/ms4/n6 @ sub-iteration 2 at Value St0 (/home/silicon/HDL/LastDayPractice/JK_flip_flop.v:4)
-#       Signal: /mod10/ms4/n3 @ sub-iteration 2 at Value St0 (/home/silicon/HDL/LastDayPractice/JK_flip_flop.v:4)
-#   Active process: /mod10/ms4/#NAND#8 @ sub-iteration 3
-#     Source: /home/silicon/HDL/LastDayPractice/JK_flip_flop.v:8
-################# END OF LOOP #################
-# ** Error (suppressible): (vsim-3601) Iteration limit 5000 reached at time 1250 ps.
-run
-# ** Error (suppressible): (vsim-3601) Iteration limit 5000 reached at time 1250 ps.
-run
-# ** Error (suppressible): (vsim-3601) Iteration limit 5000 reached at time 1250 ps.
-quit -sim
-# End time: 22:05:19 on Aug 23,2023, Elapsed time: 0:00:53
-# Errors: 3, Warnings: 3
-# Compile of MOD10.v was successful.
-vsim work.mod10
-# vsim work.mod10 
-# Start time: 22:05:41 on Aug 23,2023
-# Loading work.mod10
-# Loading work.master_slave
-add wave -position insertpoint  \
-sim:/mod10/clr \
-sim:/mod10/clk \
-sim:/mod10/q
-force -freeze sim:/mod10/clr 0 0
-force -freeze sim:/mod10/clk 1 0, 0 {50 ps} -r 100
-run
-force -freeze sim:/mod10/clr St1 0
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-restart -f
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-force -freeze sim:/mod10/clr St0 0
-force -freeze sim:/mod10/clk 1 0, 0 {50 ps} -r 100
-run
-noforce sim:/mod10/clr
-run
-run
-run
-run
-run
-run
+noforce sim:/mod13/clr
 run
 run
 run
@@ -576,63 +818,24 @@ run
 run
 run
 quit -sim
-# End time: 22:22:32 on Aug 23,2023, Elapsed time: 0:16:51
-# Errors: 0, Warnings: 1
-# Compile of MOD10.v was successful.
-# Compile of up_down_counter.v was successful.
-# Load canceled
-# Compile of up_down_counter.v failed with 2 errors.
-# Compile of up_down_counter.v failed with 1 errors.
-# Compile of up_down_counter.v was successful.
-vsim work.up_down_counter
-# vsim work.up_down_counter 
-# Start time: 22:37:46 on Aug 23,2023
-# Loading work.up_down_counter
-# Loading work.master_slave
-add wave -position insertpoint  \
-sim:/up_down_counter/clk \
-sim:/up_down_counter/clr \
-sim:/up_down_counter/m \
-sim:/up_down_counter/q
-force -freeze sim:/up_down_counter/clk 1 0, 0 {50 ps} -r 100
-force -freeze sim:/up_down_counter/clr 0 0
-force -freeze sim:/up_down_counter/m 0 0
-run
-noforce sim:/up_down_counter/clr
-run
-run
-run
-force -freeze sim:/up_down_counter/clr 1 0
-run
-run
-quit -sim
-# End time: 22:39:03 on Aug 23,2023, Elapsed time: 0:01:17
+# End time: 21:30:52 on Aug 26,2023, Elapsed time: 0:00:52
 # Errors: 0, Warnings: 7
-# Compile of up_down_counter.v was successful.
-vsim work.up_down_counter
-# vsim work.up_down_counter 
-# Start time: 22:40:40 on Aug 23,2023
-# Loading work.up_down_counter
+# Compile of mod13.v was successful.
+vsim work.mod10
+# vsim work.mod10 
+# Start time: 21:31:50 on Aug 26,2023
+# Loading work.mod10
 # Loading work.master_slave
 add wave -position insertpoint  \
-sim:/up_down_counter/clk \
-sim:/up_down_counter/clr \
-sim:/up_down_counter/m \
-sim:/up_down_counter/q
-force -freeze sim:/up_down_counter/clk 1 0, 0 {50 ps} -r 100
-force -freeze sim:/up_down_counter/clr 0 0
-force -freeze sim:/up_down_counter/m 0 0
+sim:/mod10/clk
+add wave -position insertpoint  \
+sim:/mod10/q
+add wave -position insertpoint  \
+sim:/mod10/clr
+force -freeze sim:/mod10/clk 1 0, 0 {50 ps} -r 100
+force -freeze sim:/mod10/clr 0 0
 run
-noforce sim:/up_down_counter/clr
-run
-run
-restart -f
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-force -freeze sim:/up_down_counter/clk 1 0, 0 {50 ps} -r 100
-force -freeze sim:/up_down_counter/clr 0 0
-force -freeze sim:/up_down_counter/m 0 0
-run
-force -freeze sim:/up_down_counter/clr 1 0
+noforce sim:/mod10/clr
 run
 run
 run
@@ -641,9 +844,8 @@ run
 run
 run
 run
-force -freeze sim:/up_down_counter/m St1 0
 run
 run
 run
-run
-run
+# End time: 21:33:12 on Aug 26,2023, Elapsed time: 0:01:22
+# Errors: 0, Warnings: 2

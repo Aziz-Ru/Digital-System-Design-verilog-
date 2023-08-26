@@ -13,4 +13,5 @@ nand(n5,ct,n3);
 nand(n6,ct,n4);
 nand(q,n5,qb);
 nand(qb,n6,q,clr);
+
 endmodule
