@@ -1,4 +1,6 @@
 
+# Neso Academy Digital Electronics
+
 # Digital System Design in Verilog
 Verilog is a hardware description language (HDL) used for designing and modeling digital circuits and systems. It's primarily used in the field of digital design and electronic engineering to describe the behavior and structure of digital circuits, ranging from simple logic gates to complex systems on a chip (SoCs).
 
